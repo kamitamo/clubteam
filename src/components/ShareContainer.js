@@ -1,8 +1,9 @@
 import React from "react"
 import { FaTwitterSquare, FaFacebookSquare, FaLine } from "react-icons/fa"
 import ShareIcon from "./ShareIcon"
-import styled from "styled-components"
+//import styled from "styled-components"
 
+/*
 const ShareArea = styled.div`
   svg {
     width: 30px;
@@ -16,10 +17,10 @@ const ShareArea = styled.div`
     }
   }
 `
-
+*/
 const ShareCont = ({ facebook, twitter, LINE, href }) => {
   return (
-    <ShareArea>
+    <div className="ShareArea">
       <p>この記事をシェアする</p>
       {twitter && (
         <ShareIcon shareUrl={`https://twitter.com/intent/tweet?url=${href}`}>
@@ -40,7 +41,7 @@ const ShareCont = ({ facebook, twitter, LINE, href }) => {
           <FaLine />
         </ShareIcon>
       )}
-    </ShareArea>
+    </div>
   )
 }
 

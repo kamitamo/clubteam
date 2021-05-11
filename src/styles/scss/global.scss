@@ -1,5 +1,18 @@
 //$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
+.ShareArea {
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-right: var(--spacing);
+  }
+  a {
+    &:after {
+      display: none;
+    }
+  }
+}
+
 .linkText {
     border: 0;
     box-shadow: none;
