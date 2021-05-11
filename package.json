@@ -2,8 +2,11 @@
   "name": "club team introduction and blog",
   "private": true,
   "description": "A starter blog template for use with GatsbyJS",
+  "author": "kamitamo",
   "version": "1.0.0",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kamitamo/clubteam/issues"
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -47,6 +50,10 @@
     "sass": "^1.32.12",
     "serialize-javascript": "^5.0.1",
     "styled-components": "^5.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamitamo/clubteam.git"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
