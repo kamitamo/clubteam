@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import BlogItem from "../components/BlogItem"
 import Seo from "../components/SEO"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const Tags = ({ pageContext, data }) => {
   const { edges } = data.allMarkdownRemark

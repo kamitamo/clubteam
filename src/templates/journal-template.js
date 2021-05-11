@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Seo from "../components/SEO"
 import BlogItem from "../components/BlogItem"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const JournalTemplate = (props) => {
     const { edges } = props.data.allMarkdownRemark

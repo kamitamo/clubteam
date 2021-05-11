@@ -3,7 +3,7 @@ import { useLocation } from "@reach/router"
 import { Link, graphql } from "gatsby"
 import Seo from "../components/SEO"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 import Share from "../components/ShareContainer"
 
