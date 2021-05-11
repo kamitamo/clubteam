@@ -20,7 +20,6 @@ module.exports = {
     plugins: [
         `gatsby-plugin-sass`,
         `gatsby-plugin-netlify`,
-        `gatsby-plugin-styled-components`,
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
