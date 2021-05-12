@@ -10,18 +10,15 @@ const BlogItem = ({ index, nodeObj }) => {
     return (
         <article key={index} >
 
-                <p>
-            {description && (
-                    <Link to={path}>{title} {description}</Link>
-            )}
+            <div>
+                {description && (
+                    <Link to={path}>
+                        {date} / {title} {description}
+                    </Link>
+                )}
+            </div>
 
-            {date && (
-                <div>
-                    <i className="fa fa-calendar"></i>{date}
-                </div>
-            )}
-                    </p>
-
+            <hr/>
         </article>
     )
 }

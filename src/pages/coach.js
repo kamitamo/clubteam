@@ -15,6 +15,7 @@ import c09 from '../images/c09.jpg'
 import c11 from '../images/c11.jpg'
 import c12 from '../images/c12.jpg'
 
+
 const CoachPage = ({
     data: {
         site
@@ -33,7 +34,6 @@ const CoachPage = ({
                             <h2>Coach</h2>
                             <p>コーチ紹介</p>
                         </header>
-
                         <div className="grid-wrapper">
                             <div className="col-6">
                                 <strong>エスブランコ代表</strong><br/>

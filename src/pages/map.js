@@ -22,7 +22,6 @@ const MapPage = ({
                             <h2>Map</h2>
                             <p>活動場所</p>
                         </header>
-
                         <h4>活動曜日</h4>
                         <p>
                             月曜、木曜、土曜、日曜、祝日

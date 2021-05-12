@@ -30,6 +30,7 @@ const BlogItemImage = ({ index, nodeObj }) => {
                 <small><i className="fa fa-calendar"></i>{date} / {title} </small>
             )}
             </div>
+            <hr/>
 
         </article>
     )

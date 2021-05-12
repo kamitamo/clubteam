@@ -36,6 +36,9 @@ const HomePage = ({ data }) => {
                                 <BlogItem nodeObj={node} key={index} />
                             ))}
                         </div>
+                        <ul className="actions fit small">
+                            <li><a href="/journal" className="button fit small">もっと見る</a></li>
+                        </ul>
                     </div>
                 </section>
 

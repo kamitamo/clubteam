@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import Seo from '../components/SEO'
 
 import logo from '../images/logo.png'
+import pic01 from '../images/esn80.jpg'
 
 const AboutPage = ({
     data: {
@@ -12,18 +13,16 @@ const AboutPage = ({
 }) => {
     return (
         <Layout>
-            <Seo
-                title="About"
-            />
+            <Seo title="About" />
 
             <div id="main">
                 <section id="one">
                     <div className="inner">
-                        <header className="major">
-                            <h2>About</h2>
-                            <p>クラブについて</p>
-                        </header>
-                        
+                            <header className="major">
+                                <h2>About</h2>
+                                <p>クラブについて</p>
+                            </header>
+                        <span className="image fit"><img src={pic01} alt="about esblanco" /></span>
                         <h4>クラブ名</h4>
                         <p>
                             FC Esblanco (FCエスブランコ)
