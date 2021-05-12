@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Seo from "../components/SEO"
-import BlogItem from "../components/BlogItem"
+import BlogItem from "../components/BlogItemImage"
 import Layout from "../components/Layout"
 
 const JournalTemplate = (props) => {

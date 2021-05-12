@@ -10,17 +10,17 @@ const BlogItem = ({ index, nodeObj }) => {
     return (
         <article key={index} >
 
+                <p>
             {description && (
-                <h4>
                     <Link to={path}>{title} {description}</Link>
-                </h4>
             )}
 
             {date && (
                 <div>
-                    <p className="fa fa-calendar">{date}</p>
+                    <i className="fa fa-calendar"></i>{date}
                 </div>
             )}
+                    </p>
 
         </article>
     )

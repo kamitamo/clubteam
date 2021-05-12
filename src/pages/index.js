@@ -29,11 +29,13 @@ const HomePage = ({ data }) => {
                     <div className="inner">
                         <header className="major">
                             <h3>NEWS</h3>
-                            <p>お知らせ</p>
+                            <p>最新情報</p>
                         </header>
-                        {BlogPostQuery.edges.map(({ node }, index) => (
-                            <BlogItem nodeObj={node} key={index} />
-                        ))}
+                        <div className="content">
+                            {BlogPostQuery.edges.map(({ node }, index) => (
+                                <BlogItem nodeObj={node} key={index} />
+                            ))}
+                        </div>
                     </div>
                 </section>
 
