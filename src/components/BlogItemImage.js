@@ -21,13 +21,13 @@ const BlogItemImage = ({ index, nodeObj }) => {
                 </Link>
             )}
             {description && (
-                <small>
+                <Link to={path}>
                 {description}
-                </small>
+                </Link>
             )}
             <br/>
             {date && (
-                <small><i className="fa fa-calendar"></i>{date} / {title} </small>
+                <small><i className="fa fa-clock-o"></i>{date} {title} </small>
             )}
             </div>
             <hr/>

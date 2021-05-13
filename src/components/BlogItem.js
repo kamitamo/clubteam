@@ -13,9 +13,12 @@ const BlogItem = ({ index, nodeObj }) => {
             <div>
                 {description && (
                     <Link to={path}>
-                        {date} / {title} {description}
+                        {description}
                     </Link>
                 )}
+                <div className="" >
+                    <i className="fa fa-clock-o" aria-hidden="true"></i>{date} {title}
+                </div>
             </div>
 
             <hr/>

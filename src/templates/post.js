@@ -20,9 +20,25 @@ export default function Template({ data }) {
             <div id="main">
                 <section id="one">
                     <div className="inner">
+                        {/* If there are tags for the post, render this section */}
+                        {frontmatter.tags && (
+                            <>
+                                
+                                {frontmatter.tags.map((tagName, index) => {
+                                    return (
+                                        <Link to={`/tags/${tagName}`} key={index}>
+                                            #{tagName}
+                                        </Link>
+                                    )
+                                })}
+                            </>
+                        )}
+                        <hr />
+                        <i className="fa fa-clock-o" aria-hidden="true"></i>{frontmatter.date} {frontmatter.title}
+                        
                         {description && (
                             <div >
-                                {description}
+                                 {description}
                             </div>
                         )}
 
@@ -38,23 +54,6 @@ export default function Template({ data }) {
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
 
-                        {/* If there are tags for the post, render this section */}
-                        {frontmatter.tags && (
-                            <>
-                                <hr />
-                                <ul>
-                                    {frontmatter.tags.map((tagName, index) => {
-                                        return (
-                                            <li key={index} >
-                                                <Link className="fa fa-futbol-o" to={`/tags/${tagName}`}  > 
-                                                    {tagName}
-                                                 </Link>
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </>
-                        )}
                         <hr />
                         <Share facebook twitter LINE href={location.href} />
 

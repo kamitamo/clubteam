@@ -21,7 +21,7 @@ const ShareArea = styled.div`
 const ShareCont = ({ facebook, twitter, LINE, href }) => {
   return (
     <div className="ShareArea">
-      <p>この記事をシェアする</p>
+        <p>この記事をシェアする</p>
       {twitter && (
         <ShareIcon shareUrl={`https://twitter.com/intent/tweet?url=${href}`}>
           <FaTwitterSquare />
