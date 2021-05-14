@@ -7,6 +7,7 @@ import Layout from "../components/Layout"
 
 import Share from "../components/ShareContainer"
 
+
 export default function Template({ data }) {
     let location = useLocation()
     const { markdownRemark: { frontmatter, html } } = data // Object destructuring
@@ -23,11 +24,10 @@ export default function Template({ data }) {
                         {/* If there are tags for the post, render this section */}
                         {frontmatter.tags && (
                             <>
-                                
                                 {frontmatter.tags.map((tagName, index) => {
                                     return (
-                                        <Link to={`/tags/${tagName}`} key={index}>
-                                            #{tagName}
+                                        <Link to={`/tags/${tagName}`} key={index} className="button small icon fa-hashtag">
+                                            {tagName}
                                         </Link>
                                     )
                                 })}

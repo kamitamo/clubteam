@@ -5,6 +5,8 @@ import Layout from '../components/Layout'
 import PropTypes from "prop-types"
 
 
+
+
 const TagsPage = ({
     data: {
         allMarkdownRemark: { group },
@@ -15,9 +17,7 @@ const TagsPage = ({
 }) => (
 
     <Layout>
-        <Seo
-            title="Tags"
-        />
+        <Seo title="Tags" />
 
         <div id="main">
             <section id="one">
@@ -25,17 +25,19 @@ const TagsPage = ({
                     <header className="major">
                         <h2>Tags</h2>
                         <p>タグ</p>
-                        
-                        <ul>
+                    </header>
+
+                    <div className="content">
+                        <ul style={{'list-style':'none'}} >
                             {group.map(tag => (
-                                <li key={tag.fieldValue} >
-                                    <Link className="fa fa-tag"  to={`/tags/${tag.fieldValue}`} >
+                                <li key={tag.fieldValue}>
+                                    <Link className="button small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
                                         {tag.fieldValue} ({tag.totalCount})
                                     </Link>
                                 </li>
                             ))}
                         </ul>
-                    </header>
+                    </div>
                 </div>
             </section>
         </div>

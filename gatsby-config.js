@@ -8,7 +8,7 @@ module.exports = {
     /* Your site config here */
     siteMetadata: {
         title: `FC Esblanco`,
-        titleTemplate: `%s | FC Esblanco`,
+        titleTemplate: `%s | FCエスブランコは、江戸川区小岩地区を中心に活動している少年サッカークラブです`,
         description: `FCエスブランコは、江戸川区小岩地区を中心に活動している少年サッカークラブです`,
         siteUrl: `https://www.fc-esblanco.com`,
         image: `/images/logo.png`,
