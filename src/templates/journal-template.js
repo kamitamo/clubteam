@@ -29,14 +29,16 @@ const JournalTemplate = (props) => {
                         {numPages > 1 && (
                             <>
                                 <ul className="pagination">
+                                        <li>
                                     {Array.from({ length: numPages }, (_, i) => (
-                                        <Link
+                                            <Link
                                             to={`/journal/${i === 0 ? "" : i + 1}`} 
-                                            key={`pagination-numbers${i + 1}`}
-                                        >
+                                            key={`pagination-numbers${i + 1}` }
+                                                className="page" >
                                             {i + 1} {}
-                                        </Link>
+                                            </Link>
                                     ))}
+                                        </li>
                                 </ul>
                             </>
                         )}
