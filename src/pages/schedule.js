@@ -5,6 +5,8 @@ import Layout from '../components/Layout'
 import loadable from '@loadable/component'
 import Seo from "../components/SEO"
 
+import pic04 from '../images/schedule.jpg'
+
 
 const OtherComponent = loadable(() => import('../components/Calendar.js'))
 function CalComponent() {
@@ -20,21 +22,22 @@ const SchedulePage = ({
 }) => {
     return (
         <Layout>
-            <Seo
-                title="Schedule"
-            />
+            <Seo title="Schedule" />
+
+            <section id="banner" className="style7" style={{backgroundImage: `url(${pic04})`}}>
+                <div className="inner">
+                    <header className="major">
+                        <h2>Schedule</h2>
+                        <p>活動予定表</p>
+                    </header>
+                </div>
+            </section>
 
             <div id="main">
-                <section id="one">
-                    <div className="inner">
-                        <header className="major">
-                            <h2>Schedule</h2>
-                            <p>活動予定表</p>
-                        </header>
-                    </div>
-                </section>
+                <div className="inner">
+                    <CalComponent />
+                </div>
             </div>
-            <CalComponent />
         </Layout>
     )
 }

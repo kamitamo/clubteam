@@ -3,7 +3,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Seo from "../components/SEO"
 
-import join_pic from '../images/join.jpg'
+import pic05 from '../images/join.jpg'
+
 
 const JoinUsPage = ({
     data: {
@@ -12,30 +13,30 @@ const JoinUsPage = ({
 }) => {
     return (
         <Layout>
-            <Seo
-                title="Join"
-            />
+            <Seo title="Join" />
+
+            <section id="banner" className="style7" style={{backgroundImage: `url(${pic05})`}}>
+                <div className="inner">
+                    <header className="major">
+                        <h2>Join</h2>
+                        <p>入部について</p>
+                    </header>
+                </div>
+            </section>
 
             <div id="main">
-                <section id="one">
-                    <div className="inner">
-                        <header className="major">
-                            <h2>Join</h2>
-                            <p>入部について</p>
-                        </header>
-                        <p>
-                            FCエスブランコでは男女問わず園児(年少)〜随時メンバーを募集しております。<br/>
-                            <br/>
-                            <span className="image fit"><img src={join_pic} alt="join esblanco" /></span>
-                            江戸川区在住、近隣地域の園児、小学生であれば、どなたでも入部できます。  <br/>
-                            お試しで一度やってみたい、という方のために体験入部も受け付けています。  <br/>
-                            体験・見学 お気軽にお問い合わせください。  <br/>
-                            お問い合わせは <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ" title="メール">info@fc-esblanco.com</a> までお願い致します。<br/>
-                        </p>
-                    </div>
-                </section>
-            </div>
+                <div className="inner">
 
+                    <p>
+                        FCエスブランコでは、男女問わず園児(年少)〜随時メンバーを募集しております。<br/>
+                        <br/>
+                        江戸川区在住、近隣地域の園児、小学生であれば、どなたでも入部できます。  <br/>
+                        お試しで一度やってみたい、という方のために体験入部も受け付けています。  <br/>
+                        体験・見学 お気軽にお問い合わせください。  <br/>
+                        お問い合わせは <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ" title="メール">info@fc-esblanco.com</a> までお願い致します。<br/>
+                    </p>
+                </div>
+            </div>
         </Layout>
     )
 }

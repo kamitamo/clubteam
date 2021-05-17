@@ -11,7 +11,7 @@ const JournalTemplate = (props) => {
 
     return (
         <Layout>
-            <Seo title="最新情報" />
+            <Seo title="試合結果" />
 
             <div id="main">
                 <section id="one">

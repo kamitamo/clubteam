@@ -37,7 +37,7 @@ const HomePage = ({ data }) => {
                             ))}
                         </div>
                         <ul className="actions fit small">
-                            <li><a href="/journal" className="button fit small">もっと見る</a></li>
+                            <li><a href="/journal" className="button special fit small">もっと見る</a></li>
                         </ul>
                     </div>
                 </section>
