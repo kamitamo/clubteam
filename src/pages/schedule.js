@@ -15,6 +15,7 @@ function CalComponent() {
   )
 }
 
+
 const SchedulePage = ({
     data: {
         site
@@ -33,7 +34,7 @@ const SchedulePage = ({
                 </div>
             </section>
 
-            <CalComponent />
+            <CalComponent  />
 
         </Layout>
     )

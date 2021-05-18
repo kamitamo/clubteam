@@ -1,0 +1,37 @@
+.fc-theme-standard .fc-list {
+    border: none;
+}
+
+
+.fc-theme-standard .fc-list-day-cushion {
+    background-color: #2a2f4a;
+}
+
+.fc .fc-list-sticky .fc-list-day > * {
+    background: #2a2f4a;
+}
+.fc-theme-standard td, {
+    border: none;
+}
+.fc-theme-standard th {
+    border: none;
+}
+
+.fc-list-event-graphic {
+    display: none;
+}
+
+.fc-event:hover, .fc-event-selected{
+    color: black;
+    a.hover {
+        color: black;
+    }
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 1em;
+}
+
+.fc-list-day-text{
+    color: white;
+}

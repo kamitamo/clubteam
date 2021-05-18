@@ -32,7 +32,7 @@ const JournalTemplate = (props) => {
 
                 </section>
 
-                <section>
+                <section id="three" >
                 {numPages > 1 && (
                     <>
                         <ul className="pagination">
@@ -41,7 +41,7 @@ const JournalTemplate = (props) => {
                                     <Link
                                         to={`/journal/${i === 0 ? "" : i + 1}`} 
                                         key={`pagination-numbers${i + 1}` }
-                                        className="page" >
+                                        className="page active" >
                                         {i + 1} {}
                                     </Link>
                                 ))}

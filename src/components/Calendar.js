@@ -4,6 +4,8 @@ import FullCalendar from '@fullcalendar/react'
 import listPlugin from '@fullcalendar/list'
 import GoogleCalendarPlugin from '@fullcalendar/google-calendar'
 
+import "@fullcalendar/list/main.css";
+import '../styles/scss/_cfc.scss'
 
 export default class Schedule extends React.Component {
 

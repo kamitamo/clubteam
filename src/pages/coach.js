@@ -6,7 +6,6 @@ import Seo from "../components/SEO"
 import c01 from '../images/c01.jpg'
 import c02 from '../images/c02.jpg'
 import c03 from '../images/c03.jpg'
-import c04 from '../images/c04.jpg'
 import c05 from '../images/c05.jpg'
 import c06 from '../images/c06.jpg'
 import c07 from '../images/c07.jpg'
@@ -57,48 +56,35 @@ const CoachPage = ({
                                 1999 FCエスブランコ<br/>
                             </p>
                         </div>
+
+                        <div className="col-6">
+                            <br/>
+                            <img src={c07} alt="コーチ" />
+                            <p>
+                                ヘッドコーチ<br/>
+
+                                松田 教正（まつだ のりまさ）<br/>
+                                ライセンス JFA公認D級<br/>
+                                選手歴 京都サンガJrユース<br/>洛南高等学校<br/>大阪産業大学(主将)<br/>
+                                選抜歴 表彰など 京都選抜(小学生〜中学生)<br/>関西学生選抜候補(大学生)<br/>関西学生サッカーリーグ<br/>2部ベストイレブン<br/>
+                                指導歴 2015〜現在 エスブランコ  <br/>
+                            </p>
+                        </div>
+
                         <div className="col-6">
                             <br/>
                             <img src={c03} alt="コーチ" />
                             <p>
                                 越後 寛一（えちご ひろかず）<br/>
                                 ライセンス JFA公認D級<br/>
-                                選手歴   区立小岩第四中学校 私立八千代松陰高等学校<br/>
-                                指導歴   2003 現在 エスブランコ  <br/>
+                                選手歴 区立小岩第四中学校 私立八千代松陰高等学校<br/>
+                                指導歴 2003 現在 エスブランコ  <br/>
                                 2009〜2011 ファンルーツ  <br/>
                                 2011〜2012 横浜ユナイテッド  <br/>
                                 FCバルセロナキャンプ アシスタントコーチ<br/>
                             </p>
                         </div>
-                        <div className="col-6">
-                            <br/>
-                            <img src={c05} alt="コーチ" />
-                            <p>
-                                神尾 航平（かみお こうへい）<br/>
-                                ライセンス JFA公認C級<br/>JFA公認C級(GK)<br/>
-                                選手歴   小岩第一中学校<br/>都立東高等学校<br/>
-                                指導歴   2018〜現在 エスブランコ  <br/>
-                            </p>
-                        </div>
-                        <div className="col-6">
-                            <br/>
-                            <img src={c08} alt="コーチ" />
-                            <p>
-                                坂本 憲吾（さかもと　けんご）<br/>
-                                選手歴   2010〜2013FC習志野Jr.ユース<br/>都立小岩高等学校<br/>
-                                指導歴   2018〜現在 エスブランコ  <br/>
-                            </p>
-                        </div>
-                        <div className="col-6">
-                            <br/>
-                            <img src={c06} alt="コーチ" />
-                            <p>
-                                高良 真哉（たから しんや）<br/>
-                                ライセンス JFA公認D級<br/>
-                                選手歴   小岩第三中学校<br/>都立葛飾野高等学校<br/>
-                                指導歴   2011〜現在 エスブランコ  <br/>
-                            </p>
-                        </div>
+
                         <div className="col-6">
                             <br/>
                             <img src={c02} alt="コーチ" />
@@ -110,6 +96,42 @@ const CoachPage = ({
                                 指導歴   2010〜現在 エスブランコ  <br/>
                             </p>
                         </div>
+
+                        <div className="col-6">
+                            <br/>
+                            <img src={c05} alt="コーチ" />
+                            <p>
+                                神尾 航平（かみお こうへい）<br/>
+                                ライセンス JFA公認C級<br/>JFA公認C級(GK)<br/>
+                                選手歴   小岩第一中学校<br/>都立東高等学校<br/>
+                                指導歴   2018〜現在 エスブランコ  <br/>
+                            </p>
+                        </div>
+
+                        <hr />
+
+                        <div className="col-6">
+                            <br/>
+                            <img src={c08} alt="コーチ" />
+                            <p>
+                                坂本 憲吾（さかもと　けんご）<br/>
+                                選手歴   2010〜2013FC習志野Jr.ユース<br/>都立小岩高等学校<br/>
+                                指導歴   2018〜現在 エスブランコ  <br/>
+                            </p>
+                        </div>
+
+                        <div className="col-6">
+                            <br/>
+                            <img src={c06} alt="コーチ" />
+                            <p>
+                                高良 真哉（たから しんや）<br/>
+                                ライセンス JFA公認D級<br/>
+                                選手歴   小岩第三中学校<br/>都立葛飾野高等学校<br/>
+                                指導歴   2011〜現在 エスブランコ  <br/>
+                            </p>
+                        </div>
+
+
                         <div className="col-6">
                             <br/>
                             <img src={c09} alt="コーチ" />
@@ -119,27 +141,7 @@ const CoachPage = ({
                                 指導歴 2018〜現在 エスブランコ  <br/>
                             </p>
                         </div>
-                        <div className="col-6">
-                            <br/>
-                            <img src={c04} alt="コーチ" />
-                            <p>
-                                星谷 政和（ほしたに まさかず）<br/>
-                                ライセンス JFA公認D級<br/>
-                                選手歴 リベルダーデ社会人（1995-2004）
-                                指導歴 2012〜現在 エスブランコ  <br/>
-                            </p>
-                        </div>
-                        <div className="col-6">
-                            <br/>
-                            <img src={c07} alt="コーチ" />
-                            <p>
-                                松田 教正（まつだ のりまさ）<br/>
-                                ライセンス JFA公認D級<br/>
-                                選手歴 京都サンガJrユース<br/>洛南高等学校<br/>大阪産業大学(主将)<br/>
-                                選抜歴 表彰など 京都選抜(小学生〜中学生)<br/>関西学生選抜候補(大学生)<br/>関西学生サッカーリーグ<br/>2部ベストイレブン<br/>
-                                指導歴 2015〜現在 エスブランコ  <br/>
-                            </p>
-                        </div>
+
                         <div className="col-6">
                             <br/>
                             <img src={c11} alt="コーチ" />
@@ -151,6 +153,7 @@ const CoachPage = ({
                                     指導歴 2013〜現在 エスブランコ  <br/>
                                 </p>
                             </div>
+
                             <div className="col-6">
                                 <br/>
                                 <img src={c12} alt="コーチ" />

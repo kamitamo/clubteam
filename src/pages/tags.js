@@ -28,7 +28,7 @@ const TagsPage = ({
                     </header>
 
                     <div className="content">
-                        <ul style={{'list-style':'none'}} >
+                        <ul style={{'listStyleType':'none'}} >
                             {group.map(tag => (
                                 <li key={tag.fieldValue}>
                                     <Link className="button small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >

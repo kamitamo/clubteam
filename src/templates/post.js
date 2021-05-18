@@ -23,10 +23,10 @@ export default function Template({ data }) {
                 <div className="inner">
                     <header className="major">
                         <h2>
-                            {frontmatter.title}
+                            <i className="fa fa-clock-o" aria-hidden="true"></i>{frontmatter.date} {frontmatter.title}
                         </h2>
                         <p>
-                            <i className="fa fa-clock-o" aria-hidden="true"></i>{frontmatter.date}
+                            {description}
                         </p>
                     </header>
                 </div>
@@ -36,12 +36,6 @@ export default function Template({ data }) {
                 <section id="one">
                     <div className="inner">
 
-                        {description && (
-                            <div>
-                                {description}
-                            </div>
-                        )}
-                        
                         <div
                             className="blog-post-content"
                             dangerouslySetInnerHTML={{ __html: html }}

@@ -16,7 +16,7 @@ const Menu = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/pp">privacy policy</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/link">link</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/doc">documents</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/tags">tag</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/tags">tags</Link></li>
             </ul>
         </div>
         <button className="close_b" type="button" onClick={props.onToggleMenu}>Close</button>
