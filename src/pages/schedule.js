@@ -33,11 +33,7 @@ const SchedulePage = ({
                 </div>
             </section>
 
-            <div id="main">
-                <div className="inner">
-                    <CalComponent />
-                </div>
-            </div>
+            <CalComponent />
         </Layout>
     )
 }

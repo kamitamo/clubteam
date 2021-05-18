@@ -34,14 +34,18 @@ export default function Template({ data }) {
                             </>
                         )}
                         <hr />
-                        <i className="fa fa-clock-o" aria-hidden="true"></i>{frontmatter.date} {frontmatter.title}
                         
-                        {description && (
-                            <div >
-                                 {description}
-                            </div>
+                        
+                        {frontmatter.title && (
+                        <header className="major">
+                            <h2>
+                                {frontmatter.title}
+                            </h2>
+                            <p>
+                                <i className="fa fa-clock-o" aria-hidden="true"></i>{frontmatter.date}
+                            </p>
+                        </header>
                         )}
-
 
                         {/* If featured image is present, render featured image */}
                         {featuredImgFluid && (
@@ -49,6 +53,13 @@ export default function Template({ data }) {
                                 <GatsbyImage image={featuredImgFluid} alt={featuredImgFluidAlt}/>
                             </div>
                         )}
+
+                        {description && (
+                            <div>
+                                {description}
+                            </div>
+                        )}
+                        
                         <div
                             className="blog-post-content"
                             dangerouslySetInnerHTML={{ __html: html }}
