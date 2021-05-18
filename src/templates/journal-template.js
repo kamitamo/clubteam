@@ -4,6 +4,8 @@ import Seo from "../components/SEO"
 import BlogItem from "../components/BlogItemImage"
 import Layout from "../components/Layout"
 
+import pic06 from '../images/result.jpg'
+
 const JournalTemplate = (props) => {
     const { edges } = props.data.allMarkdownRemark
 
@@ -13,36 +15,40 @@ const JournalTemplate = (props) => {
         <Layout>
             <Seo title="試合結果" />
 
+            <section id="banner" style={{backgroundImage: `url(${pic06})`}}>
+                <div className="inner">
+                    <header className="major">
+                        <h2>Result</h2>
+                        <p>試合結果</p>
+                    </header>
+                </div>
+            </section>
+                
             <div id="main">
-                <section id="one">
-                    <div className="inner">
-                        <header className="major">
-                            <h2>Result</h2>
-                            <p>試合結果</p>
-                        </header>
+                <section id="two" className="tiles">
+                    {edges.map(({ node }, index) => {
+                        return <BlogItem nodeObj={node} key={index} />
+                    })}
 
-                        {edges.map(({ node }, index) => {
-                            return <BlogItem nodeObj={node} key={index} />
-                        })}
-                        {/* Paging controls
-                            If there are multiple pages, show pager */}
-                        {numPages > 1 && (
-                            <>
-                                <ul className="pagination">
-                                    <li>
-                                        {Array.from({ length: numPages }, (_, i) => (
-                                            <Link
-                                                to={`/journal/${i === 0 ? "" : i + 1}`} 
-                                                key={`pagination-numbers${i + 1}` }
-                                                className="page" >
-                                                {i + 1} {}
-                                            </Link>
-                                        ))}
-                                    </li>
-                                </ul>
-                            </>
-                        )}
-                    </div>
+                </section>
+
+                <section>
+                {numPages > 1 && (
+                    <>
+                        <ul className="pagination">
+                            <li>
+                                {Array.from({ length: numPages }, (_, i) => (
+                                    <Link
+                                        to={`/journal/${i === 0 ? "" : i + 1}`} 
+                                        key={`pagination-numbers${i + 1}` }
+                                        className="page" >
+                                        {i + 1} {}
+                                    </Link>
+                                ))}
+                            </li>
+                        </ul>
+                    </>
+                )}
                 </section>
             </div>
         </Layout>
@@ -68,6 +74,7 @@ export const journalQuery = graphql`
             description
             featuredImageAlt
             featuredImage {
+              publicURL
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)
               }

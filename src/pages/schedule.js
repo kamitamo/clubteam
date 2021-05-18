@@ -34,6 +34,7 @@ const SchedulePage = ({
             </section>
 
             <CalComponent />
+
         </Layout>
     )
 }

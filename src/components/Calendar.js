@@ -5,8 +5,6 @@ import listPlugin from '@fullcalendar/list'
 import GoogleCalendarPlugin from '@fullcalendar/google-calendar'
 
 
-
-
 export default class Schedule extends React.Component {
 
     render() {
@@ -46,6 +44,8 @@ export default class Schedule extends React.Component {
                     e.dayNumberText = e.dayNumberText.replace('日', '')
                 }}
 
+
+
                 eventClick={ function(info) {
                     let location = "";
                     var msg = "";
@@ -57,13 +57,15 @@ export default class Schedule extends React.Component {
                         "\n" +
                         "場所："
                         + location;
+                    
                     alert(msg);
+
                     info.jsEvent.preventDefault();
                     if (info.event.url) {
                     }
                 }}
 
-
+                
 
                 googleCalendarApiKey='AIzaSyAbxROeLBWbK9xs7VGm26Ql2JjpU2VONu0'
                 events={{

@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Seo from '../components/SEO'
 
-import logo from '../images/logo.png'
 import pic01 from '../images/esn80.jpg'
 
 const AboutPage = ({
@@ -39,10 +38,6 @@ const AboutPage = ({
                     <p>クラブの前身となる「中小岩少年サッカークラブ」として部員22名で創設</p>
                     <h5>2002年</h5>
                     <p>クラブ名をFC Esblanco(FCエスブランコ）に改名</p>
-                    <h4>エンブレム</h4>
-                    <p>
-                        <img src={logo} alt="FC Esblanco" />
-                    </p>
                     <h4>OB選手の主な進路</h4>
                     <dl>
                         <dt>2017年度</dt>

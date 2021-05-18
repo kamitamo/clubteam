@@ -1,36 +1,29 @@
 import React from "react"
 import { Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+//import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
 const BlogItemImage = ({ index, nodeObj }) => {
   const {
-      frontmatter: { title, date, path, description, featuredImageAlt, featuredImage },
+      frontmatter: { title, date, path, description, featuredImage },
   } = nodeObj
 
-  const image = getImage(featuredImage)
 
     return (
 
-        <article key={index} >
-            <div className="box alt">
+        <article key={index} style={{backgroundImage: `url(${featuredImage.publicURL})`}} >
 
-            {image && (
-                <Link to={path}>
-                    <GatsbyImage image={image} alt={featuredImageAlt} />
-                </Link>
-            )}
-            {description && (
-                <Link to={path}>
-                {description}
-                </Link>
-            )}
-            <br/>
-            {date && (
-                <small><i className="fa fa-clock-o"></i>{date} {title} </small>
-            )}
+            <div className="content">
+                <div className="inner">
+                    <header className="major">
+                        <h3><i className="fa fa-clock-o"></i>{date} {title}</h3>
+                        <p>{description}</p>
+                    </header>
+                    <ul className="actions">
+                        <li><Link to={path} className="link primary"></Link></li>
+                    </ul>
+                </div>
             </div>
-            <hr/>
 
         </article>
     )
