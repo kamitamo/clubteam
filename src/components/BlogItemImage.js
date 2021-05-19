@@ -16,7 +16,7 @@ const BlogItemImage = ({ index, nodeObj }) => {
             <div className="content">
                 <div className="inner">
                     <header className="major">
-                        <h3><i className="fa fa-clock-o"></i>{date} {title}</h3>
+                        <h3>{date} {title}</h3>
                         <p>{description}</p>
                     </header>
                     <ul className="actions">

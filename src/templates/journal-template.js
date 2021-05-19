@@ -1,15 +1,16 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Seo from "../components/SEO"
 import BlogItem from "../components/BlogItemImage"
 import Layout from "../components/Layout"
+import Pagination from "../components/Pagination"
 
 import pic06 from '../images/result.jpg'
 
 const JournalTemplate = (props) => {
     const { edges } = props.data.allMarkdownRemark
 
-    const { numPages } = props.pageContext
+    const { currentPage, numPages } = props.pageContext
 
     return (
         <Layout>
@@ -23,7 +24,7 @@ const JournalTemplate = (props) => {
                     </header>
                 </div>
             </section>
-                
+            
             <div id="main">
                 <section id="two" className="tiles">
                     {edges.map(({ node }, index) => {
@@ -33,22 +34,9 @@ const JournalTemplate = (props) => {
                 </section>
 
                 <section id="three" >
-                {numPages > 1 && (
-                    <>
-                        <ul className="pagination">
-                            <li>
-                                {Array.from({ length: numPages }, (_, i) => (
-                                    <Link
-                                        to={`/journal/${i === 0 ? "" : i + 1}`} 
-                                        key={`pagination-numbers${i + 1}` }
-                                        className="page active" >
-                                        {i + 1} {}
-                                    </Link>
-                                ))}
-                            </li>
-                        </ul>
-                    </>
-                )}
+                    <div className="inner">
+                        <Pagination numPages={numPages} currentPage={currentPage} pathBase="/journal/" />
+                    </div>
                 </section>
             </div>
         </Layout>

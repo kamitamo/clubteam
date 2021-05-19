@@ -60,8 +60,8 @@ export default class Schedule extends React.Component {
                         "場所："
                         + location;
                     
-                    alert(msg);
 
+                    alert(msg)
                     info.jsEvent.preventDefault();
                     if (info.event.url) {
                     }

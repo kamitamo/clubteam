@@ -185,11 +185,11 @@
 			@include breakpoint(xsmall) {
 				li {
 					&:nth-child(n+2):nth-last-child(n+2) {
-						display: none;
+						//display: none;
 					}
 
 					&:first-child {
-						padding-right: 0;
+//						padding-right: 0;
 					}
 				}
 			}

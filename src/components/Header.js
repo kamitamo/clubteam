@@ -6,7 +6,7 @@ const Header = (props) => (
     <header id="header" className="alt">
         <Link to="/" className="logo"><strong>FC Esblanco</strong> </Link>
         <nav>
-            <button className="linkText" type="button" onClick={props.onToggleMenu}>Menu</button>
+            <button className="linkText" onClick={props.onToggleMenu} >Menu</button>
         </nav>
     </header>
 )
