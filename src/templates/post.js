@@ -23,7 +23,7 @@ export default function Template({ data }) {
                 <div className="inner">
                     <header className="major">
                         <h2>
-                            <i className="fa fa-clock-o" aria-hidden="true"></i>{frontmatter.date} {frontmatter.title}
+                            {frontmatter.date} {frontmatter.title}
                         </h2>
                         <p>
                             {description}
@@ -40,19 +40,25 @@ export default function Template({ data }) {
                             className="blog-post-content"
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
+                        
+                        <div className="TagArea">
 
                         {/* If there are tags for the post, render this section */}
                         {frontmatter.tags && (
-                            <>
+                            <ul className="actions horizontal">
                                 {frontmatter.tags.map((tagName, index) => {
                                     return (
-                                        <Link to={`/tags/${tagName}`} key={index} className="button small icon fa-hashtag">
-                                            {tagName}
-                                        </Link>
+                                        <li key={index} >
+                                            <Link to={`/tags/${tagName}`} className="button small icon fa-hashtag">
+                                                {tagName}
+                                            </Link>
+                                        </li>
                                     )
                                 })}
-                            </>
+                            </ul>
                         )}
+                        </div>
+
                         <hr />
                         <Share facebook twitter LINE href={location.href} />
 

@@ -6,19 +6,23 @@ import Seo from "../components/SEO"
 import Layout from "../components/Layout"
 
 const Tags = ({ pageContext, data }) => {
-  const { edges } = data.allMarkdownRemark
-  return (
+    const { edges } = data.allMarkdownRemark
+    const { tag } = pageContext
+ return (
     <Layout>
-        <Seo
-            title="Tags"
-        />
+        <Seo title="Tags" />
         <div id="main">
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                            <h2>Tags</h2>
-                            <p>タグ</p>
+                        <h2>Tags</h2>
+                        <p>{tag}</p>
                     </header>
+                </div>
+            </section>
+
+            <section id="two">
+                <div className="inner">
                     <div>
                         {edges.map(({ node }, index) => {
                             return <BlogItem nodeObj={node} key={index} />

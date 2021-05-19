@@ -23,7 +23,7 @@ const DocPage = ({
                             <p>ドキュメント</p>
                         </header>
 
-                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
                         <a href={kyubu_fukubu_taibu} title="休部・復部・退部届" target="_blank" rel="noopener noreferrer"> 休部・復部・退部届</a>
                     </div>
                 </section>

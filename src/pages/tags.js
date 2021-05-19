@@ -26,18 +26,20 @@ const TagsPage = ({
                         <h2>Tags</h2>
                         <p>タグ</p>
                     </header>
+                </div>
+            </section>
 
-                    <div className="content">
-                        <ul style={{'listStyleType':'none'}} >
-                            {group.map(tag => (
-                                <li key={tag.fieldValue}>
-                                    <Link className="button small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
-                                        {tag.fieldValue} ({tag.totalCount})
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+            <section id="two">
+                <div className="inner">
+                    <ul style={{'listStyleType':'none'}} className="actions vertical">
+                        {group.map(tag => (
+                            <li key={tag.fieldValue}>
+                                <Link className="button small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
+                                    {tag.fieldValue} ({tag.totalCount})
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </section>
         </div>
