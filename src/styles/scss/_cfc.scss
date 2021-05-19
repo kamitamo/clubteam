@@ -1,15 +1,24 @@
+
+.fc .fc-list-event:hover td {
+    color: white;
+    background-color: #2a2f4a;
+}
+
+
+
 .fc-theme-standard .fc-list {
     border: none;
 }
 
 
-.fc-theme-standard .fc-list-day-cushion {
-    background-color: #2a2f4a;
-}
+// .fc-theme-standard .fc-list-day-cushion {
+//     background-color: #2a2f4a;
+// }
 
-.fc .fc-list-sticky .fc-list-day > * {
-    background: #2a2f4a;
-}
+// .fc .fc-list-sticky .fc-list-day > * {
+//     background: #2a2f4a;
+// }
+
 .fc-theme-standard td, {
     border: none;
 }
@@ -33,5 +42,5 @@
 }
 
 .fc-list-day-text{
-    color: white;
+    color: black;
 }

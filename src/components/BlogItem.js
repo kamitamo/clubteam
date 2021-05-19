@@ -11,16 +11,10 @@ const BlogItem = ({ index, nodeObj }) => {
         <article key={index} >
 
             <div>
-                {description && (
-                    <Link to={path}>
-                        {description}
-                    </Link>
-                )}
-                <div className="" >
-                    <i className="fa fa-clock-o" aria-hidden="true"></i>{date} {title}
-                </div>
+                <Link to={path}>
+                    {date} {title} {description}
+                </Link>
             </div>
-
             <hr/>
         </article>
     )

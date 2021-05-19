@@ -31,11 +31,9 @@ const HomePage = ({ data }) => {
                             <h3>NEWS</h3>
                             <p>最新情報</p>
                         </header>
-                        <div className="content">
                             {BlogPostQuery.edges.map(({ node }, index) => (
                                 <BlogItem nodeObj={node} key={index} />
                             ))}
-                        </div>
                         <ul className="actions fit small">
                             <li><a href="/journal" className="button special fit small">もっと見る</a></li>
                         </ul>

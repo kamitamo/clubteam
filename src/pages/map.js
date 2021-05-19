@@ -29,12 +29,7 @@ const MapPage = ({
                 <div className="inner">
                     <h4>活動場所について</h4>
                     <p>
-                        　月曜・木曜は、校庭で夜練、ESP（Esblanco Soccer Park）を実施してます。（※校庭利用不可の場合は中止の場合あり）<br/>
-                        <br/>
-                        　土曜・日曜及び祝日は、校庭または遠征先で、練習やトレーニングマッチがあります。<br/>
-                        <br/>
-                        詳しくは、<a href="/schedule">活動予定表</a>をご確認ください。
-                        
+                        FC Esblancoでは、小岩地区の学校施設及び、篠崎グラウンドで活動してます。
                     </p>
                     <hr/>
                     
@@ -52,7 +47,7 @@ const MapPage = ({
                             <h4>江戸川区立東小岩小学校</h4>
                             <p>
                                 東京都江戸川区東小岩4-12-1<br/>
-                                ＪＲ総武線小岩駅下車北口より徒歩11分<br/>
+                                ＪＲ総武線小岩駅下車南口より徒歩11分<br/>
                                 <a className="fa fa-map-marker" href="https://goo.gl/maps/Rqg1F1HfCahasFaa9" target="_blank" rel="noopener noreferrer">Google Mapで開く</a><br/>
                             </p>
                             <hr/>
@@ -61,7 +56,7 @@ const MapPage = ({
                             <h4>江戸川区立小岩第一中学校</h4>
                             <p>
                                 東京都江戸川区東小岩3-10-8<br/>
-                                ＪＲ総武線小岩駅下車北口より徒歩16分<br/>
+                                ＪＲ総武線小岩駅下車南口より徒歩16分<br/>
                                 <a className="fa fa-map-marker" href="https://goo.gl/maps/H6aUdFvNz7xXsUNg7" target="_blank" rel="noopener noreferrer">Google Mapで開く</a>
                             </p>
                             <hr/>
@@ -70,10 +65,18 @@ const MapPage = ({
                             <h4>江戸川区立南小岩第二小学校</h4>
                             <p>
                                 東京都江戸川区南小岩2-16-1<br/>
-                                ＪＲ総武線小岩駅下車北口より徒歩15分<br/>
+                                ＪＲ総武線小岩駅下車南口より徒歩15分<br/>
                                 <a className="fa fa-map-marker" href="https://goo.gl/maps/Cu43vwKkNmietGNz5" target="_blank" rel="noopener noreferrer">Google Mapで開く</a>
                             </p>
                             <hr/>
+                        </div>
+                        <div className="col-4">
+                            <h4>篠崎グラウンド・サッカー場</h4>
+                            <p>
+                                東京都江戸川区篠崎町２丁目 東先<br/>
+                                ＪＲ総武線小岩駅下車南口から「京成バス（小72 篠崎線）「浅間神社」から徒歩<br/>
+                                <a className="fa fa-map-marker" href="https://goo.gl/maps/rJ6xTzu74vxuTD9G9" target="_blank" rel="noopener noreferrer">Google Mapで開く</a><br/>
+                            </p>
                         </div>
                     </div>
                 </div>
