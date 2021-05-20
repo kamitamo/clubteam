@@ -1,9 +1,11 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Seo from "../components/SEO"
 
 import pic05 from '../images/join.jpg'
+
+import cp202106 from '../images/202106cp_img.jpg'
 
 
 const JoinUsPage = ({
@@ -32,8 +34,21 @@ const JoinUsPage = ({
                         <br/>
                         江戸川区在住、近隣地域の園児、小学生であれば、どなたでも入部できます。  <br/>
                         お試しで一度やってみたい、という方のために体験入部も受け付けています。  <br/>
+                        <br/>
+                    </p>
+
+                    <Link to="/cp">
+                        <img className="image fit" src={cp202106} alt="エスブランコキャンペーン" />
+                    </Link>
+
+                    <p>
+                        <br/>
                         体験・見学 お気軽にお問い合わせください。  <br/>
-                        お問い合わせは <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ" title="メール">info@fc-esblanco.com</a> までお願い致します。<br/>
+                        <ul className="actions fit small">
+                            <li>
+                                <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ(j)" title="メール" className="button special fit small">問い合わせる</a>
+                            </li>
+                        </ul>
                     </p>
                 </div>
             </div>

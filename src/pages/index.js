@@ -31,6 +31,10 @@ const HomePage = ({ data }) => {
                             <h3>NEWS</h3>
                             <p>最新情報</p>
                         </header>
+                        <div>
+                            <Link to="/cp">園児・低学年募集中（キャンペーン実施中）</Link>
+                        </div>
+                        <hr/>
                             {BlogPostQuery.edges.map(({ node }, index) => (
                                 <BlogItem nodeObj={node} key={index} />
                             ))}
@@ -73,7 +77,7 @@ const HomePage = ({ data }) => {
                     </article>
                     <article style={{backgroundImage: `url(${pic05})`}}>
                         <header className="major">
-                            <h3>Join Cloub</h3>
+                            <h3>Join</h3>
                             <p>入部について</p>
                         </header>
                         <Link to="/join" className="link primary"></Link>
