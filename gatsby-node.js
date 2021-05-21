@@ -8,6 +8,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const pageTemplate = path.resolve("src/templates/page-template.js")
     const blogTemplate = path.resolve("src/templates/post.js")
     const tagTemplate = path.resolve("src/templates/tags.js")
+    const catTemplate = path.resolve(`./src/templates/category.js`)
 
     const result = await graphql(`
     {
@@ -17,6 +18,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               path
               tags
+              category
             }
           }
         }
@@ -29,31 +31,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   `)
-    // Auto generate pages
-    // Pages built using templates/page-template.js
-    // const pageData = [
-    //   {
-    //     name: "privacy",
-    //     title:
-    //       "This is the privacy page. You can change this title in gatsby-node.js",
-    //     content:
-    //       "Vestibulum vestibulum finibus sem at fringilla. Morbi sed metus eu libero tincidunt pretium vel et nunc. Maecenas elementum fermentum dignissim. Cras vestibulum congue nisl, vitae euismod lectus ultricies sed. Mauris euismod fermentum ligula, a vehicula orci posuere ut. Maecenas congue sapien sit amet est pellentesque, eu rhoncus erat volutpat. Integer ut odio mattis, scelerisque magna ut, interdum urna. Aliquam sollicitudin enim sit amet bibendum mattis. Suspendisse vitae luctus sem, vitae luctus lorem. Aenean luctus risus sed rutrum vulputate. Donec vel auctor velit.",
-    //   },
-    //   {
-    //     name: "cookies",
-    //     title:
-    //       "This is the cookies page. You can change this title in gatsby-node.js",
-    //     content:
-    //       "Vestibulum vestibulum finibus sem at fringilla. Morbi sed metus eu libero tincidunt pretium vel et nunc. Maecenas elementum fermentum dignissim. Cras vestibulum congue nisl, vitae euismod lectus ultricies sed. Mauris euismod fermentum ligula, a vehicula orci posuere ut. Maecenas congue sapien sit amet est pellentesque, eu rhoncus erat volutpat. Integer ut odio mattis, scelerisque magna ut, interdum urna. Aliquam sollicitudin enim sit amet bibendum mattis. Suspendisse vitae luctus sem, vitae luctus lorem. Aenean luctus risus sed rutrum vulputate. Donec vel auctor velit.",
-    //   },
-    // ]
-    // pageData.forEach(page => {
-    //   createPage({
-    //     path: `/${page.name}`,
-    //     component: pageTemplate,
-    //     context: { page },
-    //   })
-    // })
 
     if (result.errors) {
         console.error(result.errors)
@@ -98,6 +75,28 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             },
         })
     })
+
+    // create Category pages
+    let categories = []
+    _.each(posts, edge => {
+        if (_.get(edge, 'node.frontmatter.category')) {
+            categories.push(edge.node.frontmatter.category)
+        }
+    })
+    // Eliminate duplicate categorya
+    categories = _.uniq(categories)
+    // Make category pages
+    categories.forEach(category => {
+        createPage({
+            path: `/category/${category}/`,
+            component: catTemplate,
+            context: {
+                category,
+            },
+        })
+    })
+
+
 }
 
 // for google-calendar

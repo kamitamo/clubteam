@@ -13,7 +13,7 @@ const MapPage = ({
 }) => {
     return (
         <Layout>
-            <Seo title="Map"  />
+            <Seo title="活動場所"  />
 
             <section id="banner" className="style7" style={{backgroundImage: `url(${pic03})`}}>
                 <div className="inner">
@@ -21,7 +21,6 @@ const MapPage = ({
                         <h2>Map</h2>
                         <p>活動場所</p>
                     </header>
-
                 </div>
             </section>
             
@@ -29,7 +28,7 @@ const MapPage = ({
                 <div className="inner">
                     <h4>活動場所について</h4>
                     <p>
-                        FC Esblancoでは、小岩地区の学校施設及び、篠崎グラウンドで活動してます。
+                        FC Esblancoの活動場所は、小岩地区の学校施設及び篠崎グラウンドで活動してます。
                     </p>
                     <hr/>
                     

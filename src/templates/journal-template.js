@@ -5,6 +5,7 @@ import BlogItem from "../components/BlogItemImage"
 import Layout from "../components/Layout"
 import Pagination from "../components/Pagination"
 
+
 import pic06 from '../images/result.jpg'
 
 const JournalTemplate = (props) => {
@@ -34,14 +35,17 @@ const JournalTemplate = (props) => {
                 </section>
 
                 <section id="three" >
-                    <div className="inner">
+                    <div className="inner center">
                         <Pagination numPages={numPages} currentPage={currentPage} pathBase="/journal/" />
                     </div>
                 </section>
+
+
             </div>
         </Layout>
     )
 }
+
 
 export default JournalTemplate
 
@@ -59,6 +63,7 @@ export const journalQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             path
             tags
+            category
             description
             featuredImageAlt
             featuredImage {

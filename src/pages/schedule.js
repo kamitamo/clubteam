@@ -23,7 +23,7 @@ const SchedulePage = ({
 }) => {
     return (
         <Layout>
-            <Seo title="Schedule" />
+            <Seo title="活動予定表" />
 
             <section id="banner" className="style7" style={{backgroundImage: `url(${pic04})`}}>
                 <div className="inner">

@@ -49,7 +49,7 @@ export default function Template({ data }) {
                                 {frontmatter.tags.map((tagName, index) => {
                                     return (
                                         <li key={index} >
-                                            <Link to={`/tags/${tagName}`} className="button small icon fa-hashtag">
+                                            <Link to={`/tags/${tagName}`} className="button rounded small icon fa-hashtag">
                                                 {tagName}
                                             </Link>
                                         </li>

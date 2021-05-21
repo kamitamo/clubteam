@@ -40,6 +40,11 @@
 //				@include padding(3em, 0);
 				width: calc(100% - 3em);
 			}
+
+            &.center {
+                text-align: center;
+                //align-content: center;
+            }
 		}
 	}
 

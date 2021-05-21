@@ -32,7 +32,7 @@ const HomePage = ({ data }) => {
                             <p>最新情報</p>
                         </header>
                         <div>
-                            <Link to="/cp">園児・低学年募集中（キャンペーン実施中）</Link>
+                            <Link to="/cp">園児・低学年募集中／キャンペーン実施中</Link>
                         </div>
                         <hr/>
                             {BlogPostQuery.edges.map(({ node }, index) => (

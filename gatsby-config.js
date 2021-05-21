@@ -8,8 +8,8 @@ module.exports = {
     /* Your site config here */
     siteMetadata: {
         title: `FC Esblanco`,
-        titleTemplate: `%s | FCエスブランコは、江戸川区小岩地区を中心に活動している少年サッカークラブです`,
-        description: `FCエスブランコは、江戸川区小岩地区を中心に活動している少年サッカークラブです`,
+        titleTemplate: `%s | FC Esblanco(FCエスブランコ)は、江戸川区小岩地区を中心に活動している少年サッカークラブです`,
+        description: `FC Esblanco(FCエスブランコ)は、江戸川区小岩地区を中心に活動している少年サッカークラブです`,
         siteUrl: `https://www.fc-esblanco.com`,
         image: `/images/logo.png`,
         author: `FC Esblanco`,
@@ -36,14 +36,6 @@ module.exports = {
             },
         },
         `gatsby-plugin-react-helmet`,
-        // `gatsby-plugin-offline`,
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: "ENTER YOUR GA TRACKING ID HERE",
-                head: false,
-            },
-        },
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -83,17 +75,17 @@ module.exports = {
             resolve: `gatsby-plugin-feed`,
             options: {
                 query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
+                {
+                  site {
+                    siteMetadata {
+                      title
+                      description
+                      siteUrl
+                      site_url: siteUrl
+                    }
+                  }
+                }
+                `,
                 feeds: [
                     {
                         serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -108,24 +100,24 @@ module.exports = {
                             })
                         },
                         query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
+                        {
+                           allMarkdownRemark(
+                             sort: { order: DESC, fields: [frontmatter___date] },
+                           ) {
+                               edges {
+                                 node {
+                                   excerpt
+                                   html
+                                   fields { slug }
+                                   frontmatter {
+                                     title
+                                     date
+                                   }
+                                 }
+                               }
+                             }
+                           }
+                        `,
                         output: "/rss.xml",
                         title: "FC Esblanco",
                         // optional configuration to insert feed reference in pages:

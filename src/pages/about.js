@@ -12,7 +12,7 @@ const AboutPage = ({
 }) => {
     return (
         <Layout>
-            <Seo title="About" />
+            <Seo title="クラブについて" />
 
             <section id="banner" className="style7" style={{backgroundImage: `url(${pic01})`}}>
                 <div className="inner">

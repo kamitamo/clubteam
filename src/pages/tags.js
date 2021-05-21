@@ -17,7 +17,7 @@ const TagsPage = ({
 }) => (
 
     <Layout>
-        <Seo title="Tags" />
+        <Seo title="タグ一覧" />
 
         <div id="main">
             <section id="one">
@@ -31,10 +31,10 @@ const TagsPage = ({
 
             <section id="two">
                 <div className="inner">
-                    <ul style={{'listStyleType':'none'}} className="actions vertical">
+                    <ul style={{'listStyleType':'none'}} className="actions horizontal">
                         {group.map(tag => (
                             <li key={tag.fieldValue}>
-                                <Link className="button small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
+                                <Link className="button rounded small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
                                     {tag.fieldValue} ({tag.totalCount})
                                 </Link>
                             </li>

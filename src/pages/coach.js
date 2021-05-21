@@ -23,7 +23,7 @@ const CoachPage = ({
 }) => {
     return (
         <Layout>
-            <Seo title="Coach" />
+            <Seo title="コーチ紹介" />
 
             <section id="banner" className="style7" style={{backgroundImage: `url(${pic02})`}}>
                 <div className="inner">

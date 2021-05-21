@@ -11,22 +11,23 @@ const DocPage = ({
 }) => {
     return (
         <Layout>
-            <Seo
-                title="Documents"
-            />
+            <Seo title="ドキュメント" />
 
-            <div id="main">
-                <section id="one">
+            <section id="one">
                     <div className="inner">
                         <header className="major">
                             <h2>Document</h2>
                             <p>ドキュメント</p>
                         </header>
+                    </div>
+                </section>
+
+            <div id="main">
+                <div className="inner">
 
                         <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
                         <a href={kyubu_fukubu_taibu} title="休部・復部・退部届" target="_blank" rel="noopener noreferrer"> 休部・復部・退部届</a>
-                    </div>
-                </section>
+                </div>
             </div>
         </Layout>
     )
