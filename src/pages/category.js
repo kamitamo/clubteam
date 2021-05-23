@@ -34,7 +34,7 @@ const CategoryPage = ({
                     <ul style={{'listStyleType':'none'}} className="actions vertical">
                         {group.map(category => (
                             <li key={category.fieldValue}>
-                                <Link className="button rounded small icon fa-hashtag" to={`/category/${category.fieldValue}`} >
+                                <Link to={`/category/${category.fieldValue}`} >
                                     {category.fieldValue} ({category.totalCount})
                                 </Link>
                             </li>

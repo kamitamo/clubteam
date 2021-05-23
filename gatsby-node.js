@@ -78,6 +78,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     // create Category pages
     let categories = []
+    const categoryPerPage = 10 // Change for number posts to display per page
     _.each(posts, edge => {
         if (_.get(edge, 'node.frontmatter.category')) {
             categories.push(edge.node.frontmatter.category)
@@ -86,11 +87,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     // Eliminate duplicate categorya
     categories = _.uniq(categories)
     // Make category pages
-    categories.forEach(category => {
+    categories.forEach((category,i) => {
         createPage({
             path: `/category/${category}/`,
             component: catTemplate,
             context: {
+                limit: categoryPerPage,
+                skip: i * categoryPerPage,
                 category,
             },
         })
@@ -128,3 +131,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+

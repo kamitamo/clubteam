@@ -37,7 +37,6 @@ export default function Template({ data }) {
                     <div className="inner">
 
                         <div
-                            className="blog-post-content"
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
                         

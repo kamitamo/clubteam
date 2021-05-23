@@ -5,7 +5,7 @@ date: "2021-03-06 1400"
 path: "/20210306U10TM"
 featuredImage: ./images/20210306U10.jpg
 featuredImageAlt: "20210306U10"
-tags: ["ミナレットブルー", "Ganador"]
+tags: ["カップ戦"]
 author: "FC Esblanco"
 category: "2020年度U-10"
 ---

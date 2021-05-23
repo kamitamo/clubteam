@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 
 const Footer = (props) => (
     <footer id="footer">
@@ -10,10 +11,15 @@ const Footer = (props) => (
 
                 <li><a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ2" title="メール" className="icon alt fa-envelope"><span className="label">mail</span></a></li>
 
-
-
-
             </ul>
+            
+            <div >
+                <ul className="copyright">
+                    <li><Link to="/about" >クラブ概要</Link></li>
+                    <li><Link to="/pp" >プライバシー</Link></li>
+                </ul>
+            </div>
+
             <ul className="copyright">
                 <li>&copy; FC Esblanco.</li>
             </ul>
