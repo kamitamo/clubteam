@@ -86,14 +86,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
     // Eliminate duplicate categorya
     categories = _.uniq(categories)
+    const c_numPages = Math.ceil(categories.length / categoryPerPage)
     // Make category pages
-    categories.forEach((category,i) => {
+    categories.forEach((category, i) => {
         createPage({
             path: `/category/${category}/`,
             component: catTemplate,
             context: {
                 limit: categoryPerPage,
                 skip: i * categoryPerPage,
+                c_numPages,
+                currentPage: i + 1,
                 category,
             },
         })
