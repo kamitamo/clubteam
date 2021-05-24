@@ -17,9 +17,9 @@ export default function Template({ data }) {
 
     return (
         <Layout>
-            <Seo title={frontmatter.title} />
+            <Seo title={`${frontmatter.title} ${description}`} />
             
-            <section id="banner" style={{backgroundImage:  `url(${frontmatter.featuredImage.publicURL})` }}>
+            <section id="banner" style={{backgroundImage: "none"}}>
                 <div className="inner">
                     <header className="major">
                         <h2>
@@ -32,32 +32,33 @@ export default function Template({ data }) {
                 </div>
             </section>
 
+            <img className="image fit" src={`${frontmatter.featuredImage.publicURL}`} alt="Esblanco images"/>
+            
             <div id="main">
                 <section id="one">
                     <div className="inner">
+                        <div className="TagArea">
+                            {/* If there are tags for the post, render this section */}
+                            {frontmatter.tags && (
+                                <ul className="actions horizontal">
+                                    {frontmatter.tags.map((tagName, index) => {
+                                        return (
+                                            <li key={index} >
+                                                <Link to={`/tags/${tagName}`} className="button rounded small icon fa-hashtag">
+                                                    {tagName}
+                                                </Link>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                            )}
+                        </div>
+
 
                         <div
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
                         
-                        <div className="TagArea">
-
-                        {/* If there are tags for the post, render this section */}
-                        {frontmatter.tags && (
-                            <ul className="actions horizontal">
-                                {frontmatter.tags.map((tagName, index) => {
-                                    return (
-                                        <li key={index} >
-                                            <Link to={`/tags/${tagName}`} className="button rounded small icon fa-hashtag">
-                                                {tagName}
-                                            </Link>
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                        )}
-                        </div>
-
                         <hr />
                         <Share facebook twitter LINE href={location.href} />
 
