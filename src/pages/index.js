@@ -7,7 +7,7 @@ import Banner from '../components/Banner'
 import Seo from "../components/SEO"
 //import BlogItem from "../components/BlogItem"
 
-import pic01 from '../images/esn80.jpg'
+import pic01 from '../images/about.jpg'
 import pic02 from '../images/coach.jpg'
 import pic03 from '../images/map.jpg'
 import pic04 from '../images/schedule.jpg'
@@ -38,7 +38,7 @@ const HomePage = ({ data }) => {
                     <article style={{backgroundImage: `url(${pic01})`}}>
                         <header className="major">
                             <h3>About</h3>
-                            <p>クラブ概要</p>
+                            <p>クラブについて</p>
                         </header>
                         <Link to="/about" className="link primary"></Link>
                     </article>
