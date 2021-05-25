@@ -30,7 +30,9 @@ const HomePage = ({ data }) => {
                         <header className="major">
                             <p>最新情報</p>
                         </header>
-                        <p>【走りの学校 × FC Esblanco】第1回</p>
+                        <ul className="actions">
+                            <li><Link to="/走りの学校1">【走りの学校 × FC Esblanco】第1回</Link></li>
+                        </ul>
                     </div>
                 </section>
 

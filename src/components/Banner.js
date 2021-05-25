@@ -9,7 +9,8 @@ const Banner = (props) => (
             <div className="content">
                 <p>FC Esblancoは、江戸川区小岩地区を中心に活動している少年サッカークラブです</p><br/>
                 <ul className="actions">
-                    <li><a href="/cp" className="button">園児・低学年募集中！キャンペーン実施中</a></li>
+                    <li><a href="/cp" className="button">
+                        園児・低学年キャンペーン実施中</a></li>
                 </ul>
             </div>
         </div>

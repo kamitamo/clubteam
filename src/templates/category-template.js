@@ -4,18 +4,37 @@ import BlogItem from "../components/BlogItemImage"
 import Seo from "../components/SEO"
 import Layout from "../components/Layout"
 import PropTypes from "prop-types"
-import ResultHeader from "../components/ResultHeader"
+
+import pic06 from '../images/result.jpg'
+
 
 //const Category = ({ pageContext, data }) => {
 const Category = (props) => {
 
     const { edges } = props.data.allMarkdownRemark
 
+    const { category } = props.pageContext
+
     return (
         <Layout>
             <Seo title="試合結果" />
 
-            <ResultHeader />
+            <section id="banner" style={{backgroundImage: `url(${pic06})`}}>
+                <div className="inner">
+                    <header className="major">
+                        <h2>Result</h2>
+                        <p>{category}</p>
+                    </header>
+                    
+                    {/*
+                    <div className="TagArea">
+                        <ul className="actions horizontal">
+                            <li><Link to={`/category/${category}`} className="button rounded">{category}</Link></li>
+                        </ul>
+                    </div>
+                     */}
+                </div>
+            </section>
 
             <div id="main">
                 <section id="two" className="tiles">
@@ -36,14 +55,13 @@ const Category = (props) => {
                         {props.data.allMarkdownRemark.group.map(tag => (
                             <li key={tag.fieldValue}>
                                 <Link className="button rounded small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
-                                    {tag.fieldValue} ({tag.totalCount})
+                                    {tag.fieldValue}
                                 </Link>
                             </li>
                         ))}
                     </ul>
                 </div>
             </section>
-
 
         </Layout>
     )
