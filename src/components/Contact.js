@@ -5,9 +5,10 @@ import cp202106 from '../images/202106cp_img.jpg'
 
 
 const Contact = (props) => (
+
     <section id="contact">
         <div className="inner">
-            <section>
+            <section className="split">
                 <Link to="/cp">
                     <img className="image fit" src={cp202106} alt="エスブランコキャンペーン" />
                 </Link>
@@ -16,11 +17,30 @@ const Contact = (props) => (
             <section className="split">
                 <section>
                     <div className="contact-method">
+
                         <span className="icon alt fa-envelope"></span>
-                        <h5>お問い合わせ先</h5>
                         <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ" title="メール">
                             info@fc-esblanco.com
                         </a>
+
+                    </div>
+
+
+                    <div className="contact-method">
+
+                        <span className="icon alt fa-twitter"></span>
+                        <a href="https://www.twitter.com/fcesblanco" title="twitter">
+                            @fcesblanco
+                        </a>
+
+                    </div>
+
+                    <div className="contact-method">
+                        <span className="icon alt fa-facebook"></span>
+                        <a href="https://www.facebook.com/FC-エスブランコ-205464673717617" title="facebook">
+                            Facebookアカウント
+                        </a>
+                        
                     </div>
                 </section>
             </section>                
@@ -28,4 +48,6 @@ const Contact = (props) => (
     </section>
 )
 
+
 export default Contact
+

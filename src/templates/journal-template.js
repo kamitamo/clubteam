@@ -1,10 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Seo from "../components/SEO"
 import BlogItem from "../components/BlogItemImage"
 import Layout from "../components/Layout"
 import Pagination from "../components/Pagination"
-import PropTypes from "prop-types"
 import ResultHeader from "../components/ResultHeader"
 
 
@@ -13,7 +12,7 @@ const JournalTemplate = ( props) => {
     
     const { edges } = props.data.allMarkdownRemark
 
-    const { currentPage, numPages } = props.pageContext
+    const { currentPage } = props.pageContext
 
     return (
         <Layout>
@@ -29,45 +28,55 @@ const JournalTemplate = ( props) => {
 
                 </section>
 
-                <section id="three" >
+                <section id="two" >
                     <div className="inner center">
-                        <Pagination numPages={numPages} currentPage={currentPage} pathBase="/journal/" />
+                        <Pagination numPages={Math.ceil(props.data.allMarkdownRemark.totalCount/10)} currentPage={currentPage} pathBase="/journal/" />
                     </div>
                 </section>
 
-
+                <section id="four">
+                    <div className="inner">
+                        <header className="major">
+                            <p>タグ一覧</p>
+                        </header>
+                        <ul style={{'listStyleType':'none'}} className="actions horizontal">
+                            {props.data.allMarkdownRemark.group.map(tag => (
+                                <li key={tag.fieldValue}>
+                                    <Link className="button rounded small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
+                                        {tag.fieldValue} ({tag.totalCount})
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>               
             </div>
         </Layout>
     )
 }
 
-JournalTemplate.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.arrayOf(
-        PropTypes.shape({
-          fieldValue: PropTypes.string.isRequired,
-          totalCount: PropTypes.number.isRequired,
-        }).isRequired
-      ),
-    }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }),
-    }),
-  }),
-}
 
 export default JournalTemplate
 
 export const journalQuery = graphql`
   query journalQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          category: {
+            regex: "/2021年度/"
+          }
+        }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
     ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+      totalCount
       edges {
         node {
           frontmatter {
@@ -88,12 +97,6 @@ export const journalQuery = graphql`
           excerpt
         }
       }
-
-      group(field: frontmatter___category) {
-        fieldValue
-        totalCount
-      }
-
     }
   }
 `

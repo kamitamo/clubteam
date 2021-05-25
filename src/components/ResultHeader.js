@@ -14,6 +14,7 @@ const ResultHeader = (props) => (
             
             <div className="TagArea">
                 <ul className="actions horizontal">
+                    <li><Link to={`/journal`} className="button rounded">すべて</Link></li>
                     <li><Link to={`/category/2021年度U-12`} className="button rounded">U-12(6年生)</Link></li>
                     <li><Link to={`/category/2021年度U-11`} className="button rounded">U-11(5年生)</Link></li>
                     <li><Link to={`/category/2021年度U-10`} className="button rounded">U-10(4年生)</Link></li>

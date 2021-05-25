@@ -1,11 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import BlogItem from "../components/BlogItemImage"
 import Seo from "../components/SEO"
 import Layout from "../components/Layout"
 import PropTypes from "prop-types"
 import ResultHeader from "../components/ResultHeader"
-
 
 //const Category = ({ pageContext, data }) => {
 const Category = (props) => {
@@ -23,12 +22,27 @@ const Category = (props) => {
                     {edges.map(({ node }, index) => {
                         return <BlogItem nodeObj={node} key={index} />
                     })}
-
+                    
                 </section>
 
-
             </div>
-
+            
+            <section id="four">
+                <div className="inner">
+                    <header className="major">
+                        <p>タグ一覧</p>
+                    </header>
+                    <ul style={{'listStyleType':'none'}} className="actions horizontal">
+                        {props.data.allMarkdownRemark.group.map(tag => (
+                            <li key={tag.fieldValue}>
+                                <Link className="button rounded small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
+                                    {tag.fieldValue} ({tag.totalCount})
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
 
 
         </Layout>
@@ -82,10 +96,10 @@ export const pageQuery = graphql`query ($category: String) {
         excerpt
       }
     }
-      group(field: frontmatter___category) {
-        fieldValue
-        totalCount
-      }
+    group(field: frontmatter___tags) {
+      fieldValue
+      totalCount
+    }
   }
 }
 `

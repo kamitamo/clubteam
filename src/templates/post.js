@@ -34,27 +34,27 @@ export default function Template({ data }) {
 
             <img className="image fit" src={`${frontmatter.featuredImage.publicURL}`} alt="Esblanco images"/>
             
+
             <div id="main">
+
                 <section id="one">
                     <div className="inner">
-                        <div className="TagArea">
-                            {/* If there are tags for the post, render this section */}
-                            {frontmatter.tags && (
-                                <ul className="actions horizontal">
-                                    {frontmatter.tags.map((tagName, index) => {
-                                        return (
-                                            <li key={index} >
-                                                <Link to={`/tags/${tagName}`} className="button rounded small icon fa-hashtag">
-                                                    {tagName}
-                                                </Link>
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            )}
-                        </div>
-
-
+                    <div className="TagArea">
+                        {/* If there are tags for the post, render this section */}
+                        {frontmatter.tags && (
+                            <ul className="actions horizontal">
+                                {frontmatter.tags.map((tagName, index) => {
+                                    return (
+                                        <li key={index} >
+                                            <Link to={`/tags/${tagName}`} className="button rounded small icon fa-hashtag">
+                                                {tagName}
+                                            </Link>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        )}
+                    </div>
                         <div
                             dangerouslySetInnerHTML={{ __html: html }}
                         />

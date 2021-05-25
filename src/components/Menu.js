@@ -13,8 +13,6 @@ const Menu = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/join">入部について</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/schedule">活動予定表</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/journal">試合結果</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/tags">タグ</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/link">リンク</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/doc">ドキュメント</Link></li>
             </ul>
         </div>

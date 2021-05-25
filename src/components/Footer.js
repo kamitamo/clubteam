@@ -4,23 +4,33 @@ import { Link } from "gatsby"
 const Footer = (props) => (
     <footer id="footer">
         <div className="inner">
-            <ul className="icons">
 
-                <li><a href="https://www.twitter.com/fcesblanco" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/FC-エスブランコ-205464673717617" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
+            <section className="split">
+                <div className="contact-method">
+                    <span className="icon alt fa-link"></span>
+                    <ul className="copyright">
+                        <li>
+                            <a href="http://edogawa-fa.jp/" title="江戸川区サッカー連盟" target="_blank" rel="noopener noreferrer">江戸川区サッカー連盟</a>
+                        </li>
+                        <li>
+                            <a href="http://www.tokyo-2bloc.jp/" title="東京都第2ブロック" target="_blank" rel="noopener noreferrer">東京都第2ブロック</a>
+                        </li>
+                        <li>
+                            <a href="http://www.u12tfa.jp/" title="東京都少年サッカー連盟" target="_blank" rel="noopener noreferrer">東京都少年サッカー連盟</a>
+                        </li>
+                        <li>
+                            <a href="https://jfaid.jfa.jp/uniid-server/login" title="KickOff" target="_blank" rel="noopener noreferrer">KickOff</a>
+                        </li>
+                        <li>
+                            <a href="http://www.forza.tokyo/" title="フォルツァリーグ" target="_blank" rel="noopener noreferrer">フォルツァリーグ</a><br />
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                <li><a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ2" title="メール" className="icon alt fa-envelope"><span className="label">mail</span></a></li>
-
-            </ul>
-            
-            <div >
-                <ul className="copyright">
-                    <li><Link to="/about" >クラブ概要</Link></li>
-                    <li><Link to="/pp" >プライバシー</Link></li>
-                </ul>
-            </div>
 
             <ul className="copyright">
+                <li><Link to="/pp" >プライバシー</Link></li>
                 <li>&copy; FC Esblanco.</li>
             </ul>
         </div>

@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 
 import Seo from "../components/SEO"
-import BlogItem from "../components/BlogItem"
+//import BlogItem from "../components/BlogItem"
 
 import pic01 from '../images/esn80.jpg'
 import pic02 from '../images/coach.jpg'
@@ -28,17 +28,9 @@ const HomePage = ({ data }) => {
                 <section id="one">
                     <div className="inner">
                         <header className="major">
-                            <h3>NEWS</h3>
                             <p>最新情報</p>
                         </header>
-                            {BlogPostQuery.edges.map(({ node }, index) => (
-                                <BlogItem nodeObj={node} key={index} />
-                            ))}
-                        <ul className="actions fit small">
-                            <li>
-                                <Link to="/journal" className="button special fit small">もっと見る</Link>
-                            </li>
-                        </ul>
+                        <p>【走りの学校 × FC Esblanco】第1回</p>
                     </div>
                 </section>
 
@@ -87,6 +79,24 @@ const HomePage = ({ data }) => {
                     </article>
                 </section>
 
+                <section id="three">
+                    <div className="inner">
+                        <header className="major">
+                            <p>タグ一覧</p>
+                        </header>
+                        <ul style={{'listStyleType':'none'}} className="actions horizontal">
+                            {BlogPostQuery.group.map(tag => (
+                                <li key={tag.fieldValue}>
+                                    <Link className="button rounded small icon fa-hashtag" to={`/tags/${tag.fieldValue}`} >
+                                        {tag.fieldValue} ({tag.totalCount})
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+                
+                
             </div>
             
         </Layout>
@@ -98,9 +108,19 @@ export default HomePage
 export const query = graphql`
   {
     BlogPostQuery: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
+      filter: {
+        frontmatter: {
+          category: {
+            regex: "/2021年度/"
+          }
+        }
+      }
+      limit: 2000
     ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
       totalCount
       edges {
         node {
