@@ -32,7 +32,7 @@ const JoinUsPage = ({
                         お試しで一度やってみたい、という方のために体験入部も受け付けています。  <br/>
                         <br/>
                         体験・見学 お気軽にお問い合わせください。<br/>
-                        <ul className="actions fit small">
+                        <ul className="actions fit small rounded">
                             <li>
                                 <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ(j)" title="メール" className="button special fit small">問い合わせる</a>
                             </li>

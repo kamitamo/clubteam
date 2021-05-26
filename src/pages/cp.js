@@ -27,17 +27,26 @@ const CpPage = ({
             
             <div id="main">
                 <div className="inner">
-                    FC Esblancoでは、年少〜小学１年生を対象にキャンペーンを実施してます。
-
-
                     <img className="image fit" src={cp202106} alt="エスブランコキャンペーン" />
-                    <ul>
-                        <li>対象：キッズ（年少〜）、小学１年生</li>
-                        <li>期間：2021年6月〜2021年8月末</li>
-                        <li>条件：キャンペーン期間中に入会した場合、月謝３ヶ月分を無料</li>
-                    </ul>
-                    体験・見学はお気軽にお問い合わせ下さい<br/>
-                    <ul className="actions fit small">
+                    <strong>FC Esblancoでは、年少〜小学１年生を対象にキャンペーンを実施してます</strong>
+                    <hr/>
+                    <dl>
+                        <dt>対象</dt>
+                        <dd>
+                            <p>キッズ（年少〜）、小学１年生</p>
+                        </dd>
+                        <dt>期間</dt>
+                        <dd>
+                            <p>2021年6月〜2021年8月末</p>
+                        </dd>
+                        <dt>条件</dt>
+                        <dd>
+                            <p>キャンペーン期間中に入会した場合、月謝３ヶ月分を無料</p>
+                        </dd>
+                    </dl>
+                    <hr/>
+                    <strong>体験・見学 お気軽にお問い合わせ下さい</strong><br/>
+                    <ul className="actions fit small rounded">
                         <li>
                             <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ(cp)" title="メール" className="button special fit small">問い合わせる</a>
                         </li>
