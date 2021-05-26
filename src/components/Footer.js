@@ -30,8 +30,8 @@ const Footer = (props) => (
 
 
             <ul className="copyright">
-                <li><Link to="/pp" >プライバシー</Link></li>
                 <li>&copy; FC Esblanco.</li>
+                <li><Link to="/pp" >プライバシー</Link></li>
             </ul>
         </div>
     </footer>

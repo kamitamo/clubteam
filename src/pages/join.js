@@ -26,17 +26,14 @@ const JoinUsPage = ({
             <div id="main">
                 <div className="inner">
 
-                        FCエスブランコでは、男女問わず園児(年少)〜随時メンバーを募集しております。<br/>
-                        <br/>
-                        江戸川区在住、近隣地域の園児、小学生であれば、どなたでも入部できます。  <br/>
-                        お試しで一度やってみたい、という方のために体験入部も受け付けています。  <br/>
-                        <br/>
-                        体験・見学 お気軽にお問い合わせください。<br/>
-                        <ul className="actions fit small rounded">
-                            <li>
-                                <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ(j)" title="メール" className="button special fit small">問い合わせる</a>
-                            </li>
-                        </ul>
+                    FCエスブランコでは、男女問わず園児(年少)〜随時メンバーを募集しております。<br/>
+                    <br/>
+                    江戸川区在住、近隣地域の園児、小学生であれば、どなたでも入部できます。  <br/>
+                    お試しで一度やってみたい、という方のために体験入部も受け付けています。  <br/>
+                    <br/>
+                    
+                    <h5>体験・見学 お気軽にお問い合わせください。</h5>
+                    <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ(j)" title="メール" className="button special fit rounded">問い合わせる</a>
                 </div>
             </div>
         </Layout>

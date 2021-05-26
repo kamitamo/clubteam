@@ -26,6 +26,11 @@ export default class Schedule extends React.Component {
                     right: 'next'
                 }}
 
+                footerToolbar={{
+                    left: 'prev',
+                    right: 'next'
+                }}
+
                 buttonText={{
                     next: '>',
                     prev: '<'
@@ -41,6 +46,8 @@ export default class Schedule extends React.Component {
                 navLinks={false}
                 businessHours={true}
                 editable={false}
+                firstDay='1'
+
 
                 dayCellContent={function(e) {
                     e.dayNumberText = e.dayNumberText.replace('日', '')

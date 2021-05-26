@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Seo from '../components/SEO'
 
-import pic01 from '../images/esn80.jpg'
 import logo from '../images/logo.png'
 import about from '../images/about.jpg'
 
@@ -27,56 +26,72 @@ const AboutPage = ({
 
             <div id="main">
                 <div className="inner">
-                    <img className="image right" src={logo} alt="エスブランコロゴ" />
+                    <span className="image right" ><img src={logo} alt="エスブランコロゴ" /></span>
                     <h4>クラブ名</h4>
-                    <p>
-                        FC Esblanco(エスブランコ)
-                        <br/>
-                        <br/>
-                    </p>
+                    <ul style={{'listStyleType':'none'}}>
+                        <li>FC Esblanco</li>
+                    </ul>
 
                     <h4>所属</h4>
-                    <p>
-                        江戸川区サッカー連盟少年部所属東京都第２ブロック（江戸川区・葛飾区）
-                    </p>
+                    <ul style={{'listStyleType':'none'}}>
+                        <li>東京江戸川区サッカー連盟少年部</li>
+                        <li>東京都第２ブロック</li>
+                    </ul>
                     <h4>クラブ方針</h4>
-                    <p>
-                        基本技術を習得し、次のステージでも活躍できる選手を目指す
-                    </p>
+                    <ul style={{'listStyleType':'none'}}>
+                        <li>基本技術を習得し、次のステージでも活躍できる選手を目指す</li>
+                    </ul>
                     <h4>沿革</h4>
-                    <img className="image fit" src={pic01} alt="エスブランコの歴史" />
-                    <h5>1994年</h5>
-                    <p>クラブの前身となる「中小岩少年サッカークラブ」として部員22名で創設</p>
-                    <h5>2002年</h5>
-                    <p>クラブ名をFC Esblanco(FCエスブランコ）に改名</p>
+                    <div className="table-wrapper">
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1994年</td>
+                                    <td>クラブの前身となる「中小岩少年サッカークラブ」として部員22名で創設</td>
+                                </tr>
+                                <tr>
+                                    <td>2002年</td>
+                                    <td>クラブ名をFC Esblanco(エスブランコ）に改名</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <h4>OB選手の主な進路</h4>
-                    <dl>
-                        <dt>2017年度</dt>
-                        <dd>
-                            <p>JUNS SC、ナサロットFC、FCエルマナ</p>
-                        </dd>
-                        <dt>2016年度</dt>
-                        <dd>
-                            <p>JSC CHIBA、KSCウェルネス</p>
-                        </dd>
-                        <dt>2015年度</dt>
-                        <dd>
-                            <p>SPフッチ、両国FC、KSCウェルネス2名、JUNS SC5名、フレンドリー、フレンドリーレディース4名</p>
-                        </dd>
-                        <dt>2014年度</dt>
-                        <dd>
-                            <p>エスフォルソFC、ヴェルディSSレスチ</p>
-                        </dd>
-                        <dt>2013年度</dt>
-                        <dd>
-                            <p>エスフォルソFC、SKオンゼ、両国FC</p>
-                        </dd>
-                        <dt>2012年度</dt>
-                        <dd>
-                            <p>FC東京U-15深川、エスフォルソFC2名、バルドラール浦安、ヴェルディSSレスチ2名</p>
-                        </dd>
+                    <div className="table-wrapper">
+                        <table >
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2017年度</td>
+                                    <td>JUNS SC、ナサロットFC、FCエルマナ</td>
+                                </tr>
+                                <tr>
+                                    <td>2016年度</td>
+                                    <td>JSC CHIBA、KSCウェルネス</td>
+                                </tr>
+                                <tr>
+                                    <td>2015年度</td>
+                                    <td>SPフッチ、両国FC、KSCウェルネス2名、JUNS SC5名、フレンドリー、フレンドリーレディース4名</td>
+                                </tr>
+                                <tr>
+                                    <td>2014年度</td>
+                                    <td>エスフォルソFC、ヴェルディSSレスチ</td>
+                                </tr>
+                                <tr>
+                                    <td>2013年度</td>
+                                    <td>エスフォルソFC、SKオンゼ、両国FC</td>
+                                </tr>
+                                <tr>
+                                    <td>2012年度</td>
+                                    <td>FC東京U-15深川、エスフォルソFC2名、バルドラール浦安、ヴェルディSSレスチ2名</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <p>その他、中体連サッカー部にて多数活躍中</p>
-                    </dl>
+                    </div>
                 </div>
             </div>
         </Layout>

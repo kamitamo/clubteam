@@ -29,10 +29,10 @@ const HomePage = ({ data }) => {
                 <section id="one">
                     <div className="inner">
                         <header className="major">
-                            <p>最新情報</p>
+                            <p>お知らせ</p>
                         </header>
                         <ul className="actions">
-                            <li><Link to="/走りの学校1">【走りの学校 × FC Esblanco】第1回</Link></li>
+                            <li><Link to="/走りの学校1" className="fa fa-link">【走りの学校 × FC Esblanco】第1回</Link></li>
                         </ul>
                     </div>
                 </section>
