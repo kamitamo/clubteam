@@ -14,7 +14,7 @@ export default class Schedule extends React.Component {
 
             <FullCalendar
                 plugins={[ listPlugin, GoogleCalendarPlugin ]}
-                initialView='listMonth'
+                initialView='listWeek'
                 locale="ja"
 
                 eventOrder="title"
@@ -32,7 +32,7 @@ export default class Schedule extends React.Component {
                 }}
 
                 views={{
-                    listMonth: {
+                    listWeek: {
                         listDayFormat: { day: 'numeric', weekday: 'narrow' },
                         listDaySideFormat: false
                     }

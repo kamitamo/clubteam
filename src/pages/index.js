@@ -13,6 +13,7 @@ import pic03 from '../images/map.jpg'
 import pic04 from '../images/schedule.jpg'
 import pic05 from '../images/join.jpg'
 import pic06 from '../images/result.jpg'
+import pic07 from '../images/archive.jpg'
 
 
 
@@ -78,6 +79,13 @@ const HomePage = ({ data }) => {
                             <p>試合結果</p>
                         </header>
                         <Link to="/journal" className="link primary"></Link>
+                    </article>
+                    <article style={{backgroundImage: `url(${pic07})`}}>
+                        <header className="major">
+                            <h3>Archive</h3>
+                            <p>過去の結果</p>
+                        </header>
+                        <Link to="/archive" className="link primary"></Link>
                     </article>
                 </section>
 
