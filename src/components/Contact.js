@@ -8,13 +8,11 @@ const Contact = (props) => (
 
     <section id="contact">
         <div className="inner">
-            <section className="split">
                 <section>
                     <Link to="/cp">キャンペーン実施中(2021年8月末まで)
                         <img className="image fit" src={cp202106} alt="エスブランコキャンペーン" />
                     </Link>
                 </section>
-            </section>
 
             <section className="split">
                 <section>

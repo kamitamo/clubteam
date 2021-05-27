@@ -46,6 +46,20 @@
 			}
 		}
 
+		&.half {
+			max-width: 50%;
+
+			img {
+				width: 100%;
+			}
+		}
+		&.half {
+			float: center;
+			margin: 0 1.5em 1.25em 0;
+			top: 0.25em;
+		}
+
+
 		&.main {
 			display: block;
 			margin: (_size(element-margin) * 1.25) 0;
