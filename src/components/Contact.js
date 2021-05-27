@@ -44,7 +44,7 @@ const Contact = (props) => (
                     </div>
                     <div className="contact-method">
                         <span className="icon alt fa-rss"></span>
-                        <a href="https://www.fc-esblano.com/rss.xml" title="rss">
+                        <a href="https://www.fc-esblanco.com/rss.xml" title="rss">
                             RSS
                         </a>
                         
