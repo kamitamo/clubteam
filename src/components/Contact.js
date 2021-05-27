@@ -9,7 +9,7 @@ const Contact = (props) => (
     <section id="contact">
         <div className="inner">
                 <section>
-                    <Link to="/cp">キャンペーン実施中(2021年8月末まで)
+                    <Link to="/cp">[PR]キャンペーン実施中(2021年8月末まで)
                         <img className="image fit" src={cp202106} alt="エスブランコキャンペーン" />
                     </Link>
                 </section>
