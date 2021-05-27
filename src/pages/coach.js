@@ -37,7 +37,7 @@ const CoachPage = ({
             <div id="main">
                 <div className="inner">
                     <div className="grid-wrapper">
-                        <div className="col-3">
+                        <div className="col-4">
 
                             <table className="small">
                                 <thead></thead>
@@ -52,12 +52,12 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             篠原 和之<br/>
-                                            <span style={{'font-size': '0.5em'}}>SHINOHARA KAZUYUKI</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>SHINOHARA KAZUYUKI</span><br/>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>役職</td>
-                                        <td>代表</td>
+                                        <td>エスブランコ代表</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -77,7 +77,7 @@ const CoachPage = ({
 
                         <hr/>
                         
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -91,7 +91,7 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             松田 教正<br/>
-                                            <span style={{'font-size': '0.5em'}}>MATSUDA NORIMASA</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>MATSUDA NORIMASA</span><br/>
                                         </td>
                                     </tr>
                                     <tr>
@@ -115,7 +115,7 @@ const CoachPage = ({
                         </div>
 
                         <hr/>
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -129,12 +129,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             越後 寛一<br/>
-                                            <span style={{'font-size': '0.5em'}}>ECHIGO HIROKAZU</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>ECHIGO HIROKAZU</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -149,7 +145,8 @@ const CoachPage = ({
                                             2003〜現在 エスブランコ<br/>
                                             2009〜2011 ファンルーツ<br/>
                                             2011〜2012 横浜ユナイテッド<br/>
-                                            FC Barcelona Camp Assistant coach<br/>
+                                            FCバルセロナキャンプ<br/>
+                                            アシスタントコーチ<br/>
                                         </td>
                                     </tr>
                                     <tr>
@@ -162,7 +159,7 @@ const CoachPage = ({
 
                         <hr/>
 
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -176,12 +173,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             高城 英昭<br/>
-                                            <span style={{'font-size': '0.5em'}}>TAKI HIDEAKI</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>TAKI HIDEAKI</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -207,7 +200,7 @@ const CoachPage = ({
 
                         <hr/>
 
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -221,12 +214,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             神尾 航平<br/>
-                                            <span style={{'font-size': '0.5em'}}>KAMIO KOUHEI</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>KAMIO KOUHEI</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -245,9 +234,9 @@ const CoachPage = ({
                                 </tbody>
                             </table>
                         </div>
+                        <hr/>
 
-
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -261,12 +250,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             坂本 憲吾<br/>
-                                            <span style={{'font-size': '0.5em'}}>SAKAMOTO KENGO</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>SAKAMOTO KENGO</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -282,7 +267,8 @@ const CoachPage = ({
                             </table>
                         </div>
 
-                        <div className="col-3">
+                        <hr/>
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -296,12 +282,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             高良 真哉<br/>
-                                            <span style={{'font-size': '0.5em'}}>TAKARA SHINYA</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>TAKARA SHINYA</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -324,7 +306,7 @@ const CoachPage = ({
 
                         <hr />
 
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -338,12 +320,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             野口 一希<br/>
-                                            <span style={{'font-size': '0.5em'}}>NOGUCHI KAZUKI</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>NOGUCHI KAZUKI</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -364,7 +342,7 @@ const CoachPage = ({
                         <hr/>
 
 
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -378,12 +356,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             藪田 修平<br/>
-                                            <span style={{'font-size': '0.5em'}}>YABUTA SHUHEI</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>YABUTA SHUHEI</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
@@ -408,7 +382,7 @@ const CoachPage = ({
 
                         <hr/>
 
-                        <div className="col-3">
+                        <div className="col-4">
                             <table className="small">
                                 <thead></thead>
                                 <tbody>
@@ -422,12 +396,8 @@ const CoachPage = ({
                                         <td>氏名</td>
                                         <td>
                                             吉田 俊太<br/>
-                                            <span style={{'font-size': '0.5em'}}>YOSHIDA SHUNTA</span><br/>
+                                            <span style={{'font-size': '0.8em'}}>YOSHIDA SHUNTA</span><br/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>役職</td>
-                                        <td>コーチ</td>
                                     </tr>
                                     <tr>
                                         <td>選手歴</td>
