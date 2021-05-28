@@ -29,7 +29,7 @@ const AuthorizedPage = ({
             <section id="banner" className="style7" style={{backgroundImage: `url(${auth})`}}>
                 <div className="inner">
                     <header className="major">
-                        <h2>Authorized page</h2>
+                        <h2>Member page</h2>
                         <p>関係者用</p>
                     </header>
                 </div>
@@ -37,15 +37,19 @@ const AuthorizedPage = ({
 
             <div id="main">
                 <div className="inner">
-                    <h3>ドキュメント</h3>
-                    <span>
-                        <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
-                        <a href={docs} title="休部・復部・退部届" target="_blank" rel="noopener noreferrer">
-                            休部・復部・退部届
-                        </a>
-                    </span>
+                    <div className="content">
+                        <h3>このページは？</h3>
+                        <p>
+                            このページは、FC Esblancoに入部した保護者や選手、関係者だけが閲覧できるページです。<br/>
+                        <br/>
+                        活動予定表からイベントの詳細の確認、各種ドキュメントなどをダウンロードできます。<br/>
+                        </p>
+                        <ul className="actions">
+                            <li><a href={docs} className="button special rounded fit icon fa-file-pdf-o" target="_blank" rel="noopener noreferrer">休部・復部・退部届</a></li>
+                        </ul>
+                    </div>
                     <hr/>
-                    <h3>活動予表表</h3>
+                    <h3>活動予表表（関係者用）</h3>
                     <span>関係者用ページでは、選択したイベントの詳細が確認できます</span>
                     <CalComponent  />
                 </div>

@@ -70,7 +70,13 @@ module.exports = {
                 path: `${__dirname}/src/content/images`,
             },
         },
-
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                // The property ID; the tracking code won't be generated without it
+                trackingId: "UA-122189987-2",
+            },
+        },
         {
             resolve: `gatsby-plugin-feed`,
             options: {
