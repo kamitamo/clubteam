@@ -14,7 +14,6 @@ const Menu = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/schedule">活動予定表</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/journal">試合結果</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/archive">アーカイブ</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/authorized">関係者用</Link></li>
             </ul>
         </div>
         <button className="close_b" type="button" onClick={props.onToggleMenu}>Close</button>

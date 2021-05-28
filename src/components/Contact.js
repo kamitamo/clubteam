@@ -49,6 +49,16 @@ const Contact = (props) => (
                         </a>
                         
                     </div>
+
+                    <div className="contact-method">
+                        <span className="icon alt fa-key"></span>
+                        <a href="/authorized" title="Member page">
+                            関係者用
+                        </a>
+                        
+                    </div>
+
+
                 </section>
             </section>                
         </div>
