@@ -7,7 +7,7 @@ const AS1 = (props) => (
         <p><span className="image left">
                <img  alt="カラダアルファ(α) 子供の身長サプリメント 成長期10代の決定版 スピルリナ タンパク質 カルシウム マグネシウム バランス配合 300粒 X 3袋セット：約3ヶ月分" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B00FB9GGZS&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=esb0c-22" />
            </span>
-            成長期10代の決定版<br/>子供の身長サプリメント スピルリナ タンパク質 カルシウム マグネシウム バランス配合 カラダアルファ(α)
+            成長期10代の決定版<br/>成長の鍵は栄養バランス！子供の身長サプリメント カラダアルファ(α)
         </p>
     </a>
 )

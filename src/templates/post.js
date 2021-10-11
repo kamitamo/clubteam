@@ -9,7 +9,9 @@ import Share from "../components/ShareContainer"
 //import Ads from '../components/Ads'
 import AS1 from '../components/AS1'
 //import AS2 from '../components/AS2'
-import AS3 from '../components/AS3'
+//import AS3 from '../components/AS3'
+import AS4 from '../components/AS4'
+import AS5 from '../components/AS5'
 //import Iframe from 'react-iframe'
 
 export default function Template({ data }) {
@@ -42,6 +44,8 @@ export default function Template({ data }) {
                             <img className="image fit" src={`${frontmatter.featuredImage.publicURL}`} alt={`${frontmatter.title} ${description}`}/>
                             <div dangerouslySetInnerHTML={{ __html: html }} />
 
+                            <AS5 />
+
                             <hr className="major" />
 
 
@@ -50,7 +54,8 @@ export default function Template({ data }) {
                         <div className="col-6">
                             <h4>関連記事</h4>
                             <ul className="actions">
-                                <AS3 />
+                                
+                                <AS4 />
                                 
                                 {data.relatedPosts.nodes.map(x => (
                                     <li>
@@ -65,10 +70,10 @@ export default function Template({ data }) {
                                     </li>
                                 ))}
 
+                            <hr/>
                                 <AS1 />
 
                             </ul>
-                            <hr/>
                         </div>
                     </div>
                     
