@@ -40,12 +40,3 @@ FC Esblancoは、[走りの学校](https://www.hashiri.school)から錵都 カ�
 FC Esblancoは、サッカーの基礎技術も学び、サッカーを取り巻く環境の中で、様々な側面での選手の成長をサポートいたします。
 ![走りの学校](./images/20210508hashiri4.jpg "走りの学校")
 ![走りの学校](./images/20210508hashiri5.jpg "走りの学校")
-
-
-#### 暑い夏を乗り越えよう
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=esb0c-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=B0973DY9H6&linkId=62bb76d6778e9fcb8057a314066bf43d&bc1=ffffff&amp;lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
-    </iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=esb0c-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=B095CGMDRB&linkId=99ac6006db5111846fd42985d8c50e73&bc1=ffffff&amp;lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
-    </iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=esb0c-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=B0939KZKX4&linkId=786652c0557f81066c90eecc24c592d3&bc1=ffffff&amp;lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
-    </iframe>    

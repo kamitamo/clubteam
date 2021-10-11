@@ -27,6 +27,7 @@
         "@fullcalendar/list": "^5.6.0",
         "@fullcalendar/react": "^5.6.0",
         "@loadable/component": "^5.15.0",
+        "babel-plugin-styled-components": "^1.13.2",
         "gatsby": "^3.2.1",
         "gatsby-plugin-canonical-urls": "^3.6.0",
         "gatsby-plugin-feed": "^3.4.0",
@@ -43,6 +44,7 @@
         "gatsby-plugin-sass": "^4.4.0",
         "gatsby-plugin-sharp": "^3.2.0",
         "gatsby-plugin-sitemap": "^3.2.0",
+        "gatsby-plugin-styled-components": "^4.14.0",
         "gatsby-remark-images": "^4.2.0",
         "gatsby-remark-related-posts": "^1.0.8",
         "gatsby-remark-responsive-iframe": "^4.4.0",
@@ -61,7 +63,8 @@
         "react-iframe": "^1.8.0",
         "react-modal": "^3.13.1",
         "sass": "^1.32.12",
-        "serialize-javascript": "^5.0.1"
+        "serialize-javascript": "^5.0.1",
+        "styled-components": "^5.3.1"
     },
     "repository": {
         "type": "git",

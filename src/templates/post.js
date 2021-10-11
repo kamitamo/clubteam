@@ -8,7 +8,8 @@ import Layout from "../components/Layout"
 import Share from "../components/ShareContainer"
 //import Ads from '../components/Ads'
 import AS1 from '../components/AS1'
-import AS2 from '../components/AS2'
+//import AS2 from '../components/AS2'
+import AS3 from '../components/AS3'
 //import Iframe from 'react-iframe'
 
 export default function Template({ data }) {
@@ -24,30 +25,32 @@ export default function Template({ data }) {
             <Seo title={`${frontmatter.title} ${description}`} image={`${frontmatter.featuredImage.publicURL}`} />
             
             <div id="main" className="alt">
-                <section id="banner" style={{backgroundImage: `url(${frontmatter.featuredImage.publicURL})`}}>
-                    <div className="inner">
-                        <header className="major">
-                            <h2>
-                                {frontmatter.date} {frontmatter.title}
-                            </h2>
-                            <p>
-                                {description}
-                            </p>
-                        </header>
-                    </div>
-                </section>
-                
                 <div className="inner">
+                    <header className="major">
+                        <h2>
+                            {frontmatter.date} {frontmatter.title}
+                        </h2>
+                        <p>
+                            {description}
+                        </p>
+                        
+
+                    </header>
+
                     <div className="grid-wrapper">
                         <div className="col-6">
-                            <div dangerouslySetInnerHTML={{ __html: html }} />
                             <img className="image fit" src={`${frontmatter.featuredImage.publicURL}`} alt={`${frontmatter.title} ${description}`}/>
+                            <div dangerouslySetInnerHTML={{ __html: html }} />
+
+                            <hr className="major" />
+
+
                         </div>
-                    
+                        
                         <div className="col-6">
                             <h4>関連記事</h4>
                             <ul className="actions">
-                                <AS1 />
+                                <AS3 />
                                 
                                 {data.relatedPosts.nodes.map(x => (
                                     <li>
@@ -61,15 +64,23 @@ export default function Template({ data }) {
                                         </Link>
                                     </li>
                                 ))}
+
+                                <AS1 />
+
                             </ul>
                             <hr/>
-                            <AS2 />
                         </div>
                     </div>
-                </div>
-                
-                <section id="one">
-                    <div className="inner">
+                    
+                    <section id="two">
+                        <h4>この記事をシェアする</h4>
+                        <Share facebook twitter LINE href={location.href} />
+                    </section>
+                    
+                    <hr />
+                    <section id="one">
+                        <h4>タグ一覧</h4>
+
                         <div className="TagArea">
                             {/* If there are tags for the post, render this section */}
                             {frontmatter.tags && (
@@ -86,9 +97,9 @@ export default function Template({ data }) {
                                 </ul>
                             )}
                         </div>
-                        <Share facebook twitter LINE href={location.href} />
-                    </div>
-                </section>
+                    </section>
+
+                </div>
             </div>
         </Layout>
     )

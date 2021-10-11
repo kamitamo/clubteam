@@ -45,6 +45,7 @@ module.exports = {
                 siteUrl: `https://www.fc-esblanco.com`,
             },
         },
+        `gatsby-plugin-styled-components`,
         `gatsby-plugin-preload-fonts`,
         `gatsby-plugin-preact`,
         `gatsby-plugin-sass`,

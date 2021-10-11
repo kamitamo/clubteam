@@ -35,9 +35,9 @@ const HomePage = ({ data }) => {
                             <p>お知らせ</p>
                         </header>
                         <ul className="actions">
+                            <li>10/11 <Link to="/journal"><u>試合結果</u>を更新しました</Link></li><br/>
+                            <li>10/10 <Link to="/journal"><u>試合結果</u>を更新しました</Link></li><br/>
                             <li>10/05 <Link to="/journal"><u>試合結果</u>を更新しました</Link></li><br/>
-                            <li>10/04 <Link to="/journal"><u>試合結果</u>を更新しました</Link></li><br/>
-                            <li>10/03 <Link to="/journal"><u>試合結果</u>を更新しました</Link></li><br/>
                         </ul>
                     </div>
                 </section>
