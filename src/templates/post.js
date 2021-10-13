@@ -21,6 +21,7 @@ export default function Template({ data }) {
 //    let featuredImgFluid = getImage(frontmatter.featuredImage)
 //    let featuredImgFluidAlt = frontmatter.featuredImageAlt
     let description = frontmatter.description
+    let cat = frontmatter.category
 
     return (
         <Layout>
@@ -99,6 +100,10 @@ export default function Template({ data }) {
                                             </li>
                                         )
                                     })}
+                                    <li>
+                                        <Link to={`/category/${cat}`} className="button rounded small icon fa-hashtag">{cat}
+                                        </Link>
+                                    </li>
                                 </ul>
                             )}
                         </div>
@@ -118,6 +123,7 @@ export const pageQuery = graphql`
         path
         title
         tags
+        category
         description
         author
         featuredImageAlt
@@ -146,6 +152,7 @@ export const pageQuery = graphql`
           path
           title
           tags
+          category
           description
           author
           featuredImageAlt
