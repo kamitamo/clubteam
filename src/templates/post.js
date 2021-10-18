@@ -5,14 +5,15 @@ import Seo from "../components/SEO"
 //import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout"
 
+//import AdContainer from "../components/AdContainer"
+import AdIcon from '../components/adIcon'
+import AdText from '../components/adText'
+import {adItems} from '../components/ad-items'
+
+
+
 import Share from "../components/ShareContainer"
-//import Ads from '../components/Ads'
-import AS1 from '../components/AS1'
-//import AS2 from '../components/AS2'
-//import AS3 from '../components/AS3'
-import AS4 from '../components/AS4'
-import AS5 from '../components/AS5'
-//import Iframe from 'react-iframe'
+import Iframe from 'react-iframe'
 
 export default function Template({ data }) {
     let location = useLocation()
@@ -45,7 +46,7 @@ export default function Template({ data }) {
                             <img className="image fit" src={`${frontmatter.featuredImage.publicURL}`} alt={`${frontmatter.title} ${description}`}/>
                             <div dangerouslySetInnerHTML={{ __html: html }} />
 
-                            <AS5 />
+                            <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=gift_certificates&banner=1SYCAVH40V67ZW41NT02&f=ifr&linkID=fe4ba2afa3b714f230788d49bf3d8a6d&t=esb0c-22&tracking_id=esb0c-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" frameborder="0" />
 
                             <hr className="major" />
 
@@ -54,10 +55,37 @@ export default function Template({ data }) {
                         
                         <div className="col-6">
                             <h4>関連記事</h4>
+
+                            <table className="small">
+                                <thead></thead>
+                                    <tbody>
+                                        { data.relatedPosts.nodes.map(x => (
+                                        <tr>
+                                            <td>
+                                                <Link to={x.frontmatter.path}>
+                                                    <img className="image left" alt={x.frontmatter.date} src={ x.frontmatter.featuredImage.publicURL } />
+                                                    {x.frontmatter.date} <br/> {x.frontmatter.title} {x.frontmatter.description}
+                                                </Link>
+                                            </td>
+                                        </tr>
+                                        ))}
+                                        { adItems.map((item, index) => (
+                                            <tr>
+                                                <td>
+                                                    <AdIcon adUrl={item.Url} adImgUrl={item.ImgUrl} text={item.Text}/>
+                                                    <AdText adUrl={item.Url} title={item.Title} text={item.Text}/>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                            </table>
+
+
+
+
+
+                                {/*
                             <ul className="actions">
-                                
-                                <AS4 />
-                                
                                 {data.relatedPosts.nodes.map(x => (
                                     <li>
                                         <hr/>
@@ -72,9 +100,10 @@ export default function Template({ data }) {
                                 ))}
 
                             <hr/>
-                                <AS1 />
+                                <AdContainer />
 
                             </ul>
+                                    */}
                         </div>
                     </div>
                     
@@ -141,7 +170,7 @@ export const pageQuery = graphql`
         frontmatter: { category: {regex: "/2021年度/" }}
       }
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
+      limit: 5
     ) {
       nodes {
         fields {
