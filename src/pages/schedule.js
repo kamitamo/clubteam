@@ -40,12 +40,13 @@ const SchedulePage = ({
                 <section id="one">
 
                     <center>
-                        <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=294&l=ur1&category=timesalefestival202109&banner=0SX597E1QGFERV2QK702&f=ifr&linkID=a32b8546f2646eeabd8e7f25481aa148&t=esb0c-22&tracking_id=esb0c-22" width="320" height="100" scrolling="no" border="0" marginwidth="0" frameborder="0" />
+                        <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=294&l=ur1&category=smp&banner=0C1ZBTBCEGCKBE5YWMR2&f=ifr&linkID=47ecdfb6adc9e8925ed2917a804c96ae&t=esb0c-22&tracking_id=esb0c-22" width="320" height="100" scrolling="no" border="0" marginwidth="0" frameborder="0" />
                     </center>
 
                     <CalComponent  />
                     <center>
-                        <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=timesalefestival202109&banner=0PDGA16KAB4F0X8G5782&f=ifr&linkID=61ae51dd76274ec4b382ff98c3fc20cf&t=esb0c-22&tracking_id=esb0c-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" frameborder="0" />
+                        <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=smp&banner=0CVRXQ0Q4NGWJP35WB82&f=ifr&linkID=f678632f05717c93583ccf68f3573386&t=esb0c-22&tracking_id=esb0c-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" frameborder="0" />
+
                     </center>
 
 

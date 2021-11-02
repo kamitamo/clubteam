@@ -46,12 +46,11 @@ export default function Template({ data }) {
                         <div className="col-6">
                             <img className="image fit" src={`${frontmatter.featuredImage.publicURL}`} alt={`${frontmatter.title} ${description}`}/>
 
-                            <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=288&l=ur1&category=consumables&banner=1TF5C6ZN1WJAS26EX6G2&f=ifr&linkID=9983a231d6f5d11b3cf9ac3b64d55dec&t=esb0c-22&tracking_id=esb0c-22" width="320" height="50" scrolling="no" border="0" marginwidth="0" frameborder="0" />
-
+                            <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=288&l=ur1&category=amazon_kids_plus&banner=0MR0M3MFQXBS0W1TJW02&f=ifr&linkID=72093c228f594b5502c9acd0fb9d94c1&t=esb0c-22&tracking_id=esb0c-22" width="320" height="50" scrolling="no" border="0" marginwidth="0" frameborder="0" />
+                            
                             <div dangerouslySetInnerHTML={{ __html: html }} />
 
-                            <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=timesalefestival202109&banner=0PDGA16KAB4F0X8G5782&f=ifr&linkID=1f7f3c8db3de54d39b1c98c7fcb3e822&t=esb0c-22&tracking_id=esb0c-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" frameborder="0" />
-
+                            <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=smp&banner=0CVRXQ0Q4NGWJP35WB82&f=ifr&linkID=f678632f05717c93583ccf68f3573386&t=esb0c-22&tracking_id=esb0c-22" width="300" height="250" scrolling="no" border="0" marginwidth="0"  frameborder="0" />
                             <hr className="major" />
 
 
