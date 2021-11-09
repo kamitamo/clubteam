@@ -11,7 +11,7 @@ const Banner = (props) => (
                 <ul className="actions">
                     <li><a href="/join" className="button">
                             {/* 園児・低学年募集中</a></li> */}
-                        無料体験会実施中 11月3日,6日,7日</a></li>
+                            無料体験会実施中</a></li>
                 </ul>
             </div>
         </div>
