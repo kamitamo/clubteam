@@ -6,15 +6,15 @@ import Seo from "../components/SEO"
 import Layout from "../components/Layout"
 
 //import AdContainer from "../components/AdContainer"
-import AdIcon from '../components/adIcon'
-import AdText from '../components/adText'
-import {adItems} from '../components/ad-items'
+//import AdIcon from '../components/adIcon'
+//import AdText from '../components/adText'
+//import {adItems} from '../components/ad-items'
 
 
 
 //import Share from "../components/ShareContainer"
 import ShareButtons from "../components/ShareButtons"
-import Iframe from 'react-iframe'
+//import Iframe from 'react-iframe'
 
 export default function Template({ data }) {
     let location = useLocation()
@@ -45,14 +45,9 @@ export default function Template({ data }) {
                     <div className="grid-wrapper">
                         <div className="col-6">
                             <img className="image fit" src={`${frontmatter.featuredImage.publicURL}`} alt={`${frontmatter.title} ${description}`}/>
-
-                            <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=288&l=ur1&category=amazon_kids_plus&banner=0MR0M3MFQXBS0W1TJW02&f=ifr&linkID=72093c228f594b5502c9acd0fb9d94c1&t=esb0c-22&tracking_id=esb0c-22" width="320" height="50" scrolling="no" border="0" marginwidth="0" frameborder="0" />
-                            
                             <div dangerouslySetInnerHTML={{ __html: html }} />
 
-                            <Iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=smp&banner=0CVRXQ0Q4NGWJP35WB82&f=ifr&linkID=f678632f05717c93583ccf68f3573386&t=esb0c-22&tracking_id=esb0c-22" width="300" height="250" scrolling="no" border="0" marginwidth="0"  frameborder="0" />
                             <hr className="major" />
-
 
                         </div>
                         
@@ -72,20 +67,8 @@ export default function Template({ data }) {
                                             </td>
                                         </tr>
                                         ))}
-                                        { adItems.map((item, index) => (
-                                            <tr>
-                                                <td>
-                                                    <AdIcon adUrl={item.Url} adImgUrl={item.ImgUrl} text={item.Text}/>
-                                                    <AdText adUrl={item.Url} title={item.Title} text={item.Text}/>
-                                                </td>
-                                            </tr>
-                                        ))}
                                     </tbody>
                             </table>
-
-
-
-
 
                                 {/*
                             <ul className="actions">
@@ -176,7 +159,7 @@ export const pageQuery = graphql`
         frontmatter: { category: {regex: "/2021年度/" }}
       }
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 5
+      limit: 10
     ) {
       nodes {
         fields {
