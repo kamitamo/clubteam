@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Seo from "../components/SEO"
 
@@ -30,16 +30,16 @@ const JoinUsPage = ({
 
                     FCエスブランコでは、男女問わず園児(年少)〜随時メンバーを募集しております。<br/>
                     <br/>
+                    {/*
                     11月は、無料体験会を実施します。<br/>
                     園児〜2年生迄どなたでもご参加できます。<br/>
                     お友達を連れてご参加お待ちしてます。<br/>
                     詳しくは、<Link to="/schedule" className="link primary"><b><u>活動予定表</u></b></Link>を参照ください。<br/>
                     <br/>
-                    {/*
+                     */}
                     江戸川区在住、近隣地域の園児、小学生であれば、どなたでも入部できます。  <br/>
                     お試しで一度やってみたい、という方のために体験入部も受け付けています。  <br/>
                     <br/>
-                     */}
                     <h5>体験・見学 お気軽にお問い合わせください。</h5>
                     <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ(j)" title="メール" className="button special fit rounded">問い合わせる</a>
                 </div>
