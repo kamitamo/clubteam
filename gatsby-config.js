@@ -19,6 +19,17 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: `gatsby-plugin-gdpr-cookies`,
+            options: {
+                googleAnalytics: {
+                    trackingId: 'UA-122189987-2',
+                    // Setting this parameter is optional
+                    anonymize: true
+                },
+                environments: ['production', 'development']
+            },
+        },
+        {
             resolve: "gatsby-remark-related-posts",
             options: {
                 posts_dir: `${__dirname}/src/content`,
