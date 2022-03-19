@@ -15,22 +15,23 @@ class Layout extends React.Component {
         super(props)
         this.state = {
             isMenuVisible: false,
-            loading: 'is-loading'
+//            loading: 'is-loading'
+            loading: ''
         }
         this.handleToggleMenu = this.handleToggleMenu.bind(this)
     }
 
-    componentDidMount () {
-        this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
-        }, 100);
-    }
+    // componentDidMount () {
+    //     this.timeoutId = setTimeout(() => {
+    //         this.setState({loading: ''});
+    //     }, 100);
+    // }
 
-    componentWillUnmount () {
-        if (this.timeoutId) {
-            clearTimeout(this.timeoutId);
-        }
-    }
+    // componentWillUnmount () {
+    //     if (this.timeoutId) {
+    //         clearTimeout(this.timeoutId);
+    //     }
+    // }
 
     handleToggleMenu() {
         this.setState({

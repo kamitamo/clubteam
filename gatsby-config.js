@@ -18,6 +18,15 @@ module.exports = {
         twitterURL: `https://twitter.com/`,
     },
     plugins: [
+        /*
+        {
+            resolve: `gatsby-plugin-goatcounter`,
+            options: {
+                code: 'fc-esblanco',
+                head: true,
+            },
+        },
+        */
         {
             resolve: `gatsby-plugin-gdpr-cookies`,
             options: {
