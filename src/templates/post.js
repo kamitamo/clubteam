@@ -156,7 +156,7 @@ export const pageQuery = graphql`
     relatedPosts: allMarkdownRemark(
       filter: { 
         fileAbsolutePath: { in: $relatedFileAbsolutePaths }
-        frontmatter: { category: {regex: "/2021年度/" }}
+        frontmatter: { category: {regex: "/2022年度/" }}
       }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 10

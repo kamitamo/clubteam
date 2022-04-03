@@ -88,16 +88,6 @@ const MapPage = ({
                         </div>
 
                         <div className="col-4">
-                            <h4>江戸川区立本一色小学校</h4>
-                            <p>
-                                東京都江戸川区本一色２丁目１０−１<br/>
-                                ＪＲ総武線新小岩駅下車南口から「（新小71 江戸川スポーツランド行「本一色」から徒歩<br/>
-                                <a className="fa fa-map-marker" href="https://goo.gl/maps/HrG9owSZUZak735z8" target="_blank" rel="noopener noreferrer">Google Mapで開く</a><br/>
-                            </p>
-                            <hr/>
-                        </div>
-
-                        <div className="col-4">
                             <h4>東京シューレ江戸川小学校</h4>
                             <p>
                                 東京都江戸川区西小岩２丁目４−１<br/>
