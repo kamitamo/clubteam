@@ -91,7 +91,7 @@ export default Category
 export const pageQuery = graphql`query ($category: String) {
   allMarkdownRemark(
     sort: {fields: [frontmatter___date], order: DESC}
-    filter: {frontmatter: {category: {in: [$category]}}}
+    filter: {frontmatter: { category: {in: [$category] }}}
   ) {
     totalCount
     edges {

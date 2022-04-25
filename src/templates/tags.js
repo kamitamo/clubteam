@@ -68,8 +68,7 @@ export const pageQuery = graphql`query ($tag: String) {
   allMarkdownRemark(
     limit: 2000
     sort: {fields: [frontmatter___date], order: DESC}
-    filter: {frontmatter: {
-       tags: {in: [$tag]},
+    filter: {frontmatter: { category: {regex: "/2022年度/" } tags: {in: [$tag] },
     }}
   ) {
     totalCount
