@@ -35,7 +35,7 @@ const JournalTemplate = ( props) => {
                             <li><Link to={`/category/2022年度U-09`} className="button rounded">U-09(3年生)</Link></li>
                             <li><Link to={`/category/2022年度U-08`} className="button rounded disabled">U-08(2年生)</Link></li>
                             <li><Link to={`/category/2022年度U-07`} className="button rounded">U-07(1年生)</Link></li>
-                            <li><Link to={`/category/2022年度U-06`} className="button rounded disabled">U-06(キッズ)</Link></li>
+                            <li><Link to={`/category/2022年度U-06`} className="button rounded">U-06(キッズ)</Link></li>
                         </ul>
 
                     </div>

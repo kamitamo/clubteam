@@ -35,9 +35,9 @@ const HomePage = ({ data }) => {
                             <p>お知らせ</p>
                         </header>
                         <ul className="actions">
-                            <li><a href="https://web.gekisaka.jp/photonews/detail/?351010-351010-pn&photo_no=23"><u>昨年まで当クラブに在籍していた選手がゲキサカに掲載されました</u></a></li><br/>
-                            <li><Link to="/journal"><u>6/5、6/6の試合結果</u>を更新しました</Link></li><br/>
-                            <li><Link to="/journal"><u>5/28〜5/29の試合結果</u>を更新しました</Link></li><br/>
+                            <li><Link to="/journal"><u>6/25、6/26の試合結果</u>を更新しました</Link></li><br/>
+                            <li>関係者ページのユニフォーム購入申込書を更新しました</li><br/>
+                            <li><Link to="/journal"><u>6/18、6/19の試合結果</u>を更新しました</Link></li><br/>
                         </ul>
                     </div>
                 </section>
