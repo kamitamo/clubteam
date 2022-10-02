@@ -11,6 +11,10 @@ const Contact = (props) => (
             <section >
                 <section>
                     <div className="contact-method">
+                        <span className="icon alt fa-brands fa-instagram"></span>
+                        <a href="https://instagram.com/fc_esblanco?r=nametag" title="Instagram">@fc_esblanco</a>
+                    </div>
+                    <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
                         <a href="mailto:info@fc-esblanco.com?subject=WEBからの問い合わせ" title="メール">info@fc-esblanco.com</a>
                     </div>
