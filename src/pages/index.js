@@ -35,9 +35,9 @@ const HomePage = ({ data }) => {
                             <p>お知らせ</p>
                         </header>
                         <ul className="actions">
-                            <li><a href="https://instagram.com/fc_esblanco?r=nametag" title="Instagram" target="_blank" rel="noopener noreferrer">Instagramはじめました＞<u className="icon alt fa-brands fa-instagram"> @fc_esblanco </u></a></li><br/>
+                            <li><a href="https://instagram.com/fc_esblanco?r=nametag" title="Instagram" target="_blank" rel="noopener noreferrer">Instagram(@fc_esblanco)はじめました</a></li><br/>
+                            <li><Link to="/journal"><u>10/22,10/23の試合結果</u>を更新しました</Link></li><br/>
                             <li><Link to="/journal"><u>10/16の試合結果</u>を更新しました</Link></li><br/>
-                            <li><Link to="/journal"><u>10/8〜10/11の試合結果</u>を更新しました</Link></li><br/>
                         </ul>
                     </div>
                 </section>
