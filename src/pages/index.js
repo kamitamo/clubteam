@@ -36,8 +36,8 @@ const HomePage = ({ data }) => {
                         </header>
                         <ul className="actions">
                             <li><a href="https://instagram.com/fc_esblanco?r=nametag" title="Instagram" target="_blank" rel="noopener noreferrer">Instagram(@fc_esblanco)はじめました</a></li><br/>
+                            <li><Link to="/journal"><u>10/29,10/30の試合結果</u>を更新しました</Link></li><br/>
                             <li><Link to="/journal"><u>10/22,10/23の試合結果</u>を更新しました</Link></li><br/>
-                            <li><Link to="/journal"><u>10/16の試合結果</u>を更新しました</Link></li><br/>
                         </ul>
                     </div>
                 </section>
