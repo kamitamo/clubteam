@@ -10,6 +10,7 @@ import pic03 from '../images/map.jpg'
 
 import ichu from '../images/koiwa1chu.jpg'
 import nishikoiwa from '../images/nisjikoiwashou.jpg'
+import koiwasyou from '../images/koiwasyou.jpg'
 
 
 const MapPage = ({
@@ -117,6 +118,19 @@ const MapPage = ({
                             </p>
                             <hr/>
                         </div>
+
+                        <div className="col-4">
+                            <h4>江戸川区立小岩小学校</h4>
+                            <img className="image fit" src={koiwasyou} alt="江戸川区立小岩小学校" />
+                            <p>
+                                東京都江戸川区東小岩3丁目20-10<br/>
+                                ＪＲ総武線小岩駅下車南口から徒歩15分<br/>
+                                京成電鉄「江戸川駅」下車徒歩10分<br/>
+                                <a className="fa fa-map-marker" href="https://goo.gl/maps/3jWqKVEeq5ZQcat8A" target="_blank" rel="noopener noreferrer">Google Mapで開く</a><br/>
+                            </p>
+                            <hr/>
+                        </div>
+
 
                     </div>
                 </div>
