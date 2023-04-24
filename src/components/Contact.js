@@ -55,6 +55,7 @@ const Contact = (props) => (
                             <li><a href="https://jfaid.jfa.jp/uniid-server/login" title="KickOff" target="_blank" rel="noopener noreferrer">JFA KickOff</a></li><br/>
                             <li><a href="http://www.forza.tokyo/" title="フォルツァリーグ" target="_blank" rel="noopener noreferrer">フォルツァリーグ</a><br /></li><br/>
                             <li><a href="https://tobu-league.mystrikingly.com/" title="東部リーグ" target="_blank" rel="noopener noreferrer">東部リーグ</a><br /></li><br/>
+                            <li><a href="https://sites.google.com/view/goleague/" title="GOリーグ" target="_blank" rel="noopener noreferrer">GOリーグ</a><br /></li><br/>
                         </ul>
                     </div>
                 </section>
