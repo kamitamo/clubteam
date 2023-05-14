@@ -35,9 +35,8 @@ const HomePage = ({ data }) => {
                             <p>お知らせ</p>
                         </header>
                         <ul className="actions">
-                            <li><a href="https://sites.google.com/view/goleague/" title="Instagram" target="_blank" rel="noopener noreferrer">GOリーグのリンクを設定しました</a></li><br/>
+                            <li><Link to="/journal"><u>05/13〜05/15の試合結果</u>を更新しました</Link></li><br/>
                             <li><Link to="/journal"><u>05/03〜05/06の試合結果</u>を更新しました</Link></li><br/>
-                            <li><Link to="/journal"><u>04/29の試合結果</u>を更新しました</Link></li><br/>
                         </ul>
                     </div>
                 </section>
