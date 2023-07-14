@@ -66,7 +66,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-styled-components`,
-        `gatsby-plugin-preload-fonts`,
+//        `gatsby-plugin-preload-fonts`,
         `gatsby-plugin-preact`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-netlify`,
