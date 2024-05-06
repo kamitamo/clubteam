@@ -19,6 +19,8 @@ import pic08 from '../images/20210508hashiri4.jpg'
 //import logo from '../images/logo.png'
 import bg from '../images/bg.jpg'
 
+import doc from '../pdf/FIX_ol.pdf'
+
 
 const HomePage = ({ data }) => {
     const { BlogPostQuery } = data
@@ -35,9 +37,7 @@ const HomePage = ({ data }) => {
                             <p>お知らせ</p>
                         </header>
                         <ul className="actions">
-                            <li><Link to="/journal"><u>01/13-20の試合結果</u>を更新しました</Link></li><br/>
-                            <li><Link to="/journal"><u>01/05-08の試合結果</u>を更新しました</Link></li><br/>
-                            <li><Link to="/journal"><u>12/16-17の試合結果</u>を更新しました</Link></li><br/>
+                            <a href={doc} target="_blank" rel="noopener noreferrer">入部随時募集中（クリックして詳細ページ）</a>
                         </ul>
                     </div>
                 </section>
@@ -78,13 +78,7 @@ const HomePage = ({ data }) => {
                         </header>
                         <Link to="/join" className="link primary"></Link>
                     </article>
-                    <article style={{backgroundImage: `url(${pic06})`}}>
-                        <header className="major">
-                            <h3>Result</h3>
-                            <p>試合結果</p>
-                        </header>
-                        <Link to="/journal" className="link primary"></Link>
-                    </article>
+
                     <article style={{backgroundImage: `url(${pic07})`}}>
                         <header className="major">
                             <h3>Archive</h3>
@@ -92,13 +86,7 @@ const HomePage = ({ data }) => {
                         </header>
                         <Link to="/archive" className="link primary"></Link>
                     </article>
-                    <article style={{backgroundImage: `url(${pic08})`}}>
-                        <header className="major">
-                            <h3>Event</h3>
-                            <p>走りの学校 × FC Esblanco</p>
-                        </header>
-                        <Link to="/走りの学校1" className="link primary"></Link>
-                    </article>
+
                 </section>
 
                 <section id="three">
